@@ -20,3 +20,5 @@ To use "G:INCLUDE"
 #### References
 
  - [Widget Development Methodology](https://github.com/Backbase/methodology-widget-development)
+ - [g:include Reference](https://my.backbase.com/resources/documentation/portal/5.5.1.0/refc_gnam_include.html)
+ - [Mustache](https://mustache.github.io/mustache.5.html)
