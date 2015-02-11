@@ -1,1 +1,3 @@
-# training-fe-module-02
+# Backbase Training Exercise
+
+## Portal Frontend - Module 2: Widget Extras
