@@ -11,6 +11,10 @@ _note: All exercises use the [standard portal set-up for backbase trainings](htt
 
 To use proxy pipes
 
+#### Prerequisites
+
+In order to complete this exercise, you will need to install and configure some java code provided in the [materials](materials/) folder. Please refer to [usage.md](usage.md) to learn how to set things up.
+
 #### Steps
 
  - Do an ajax call to an RSS feed and use provided "jsonPipe" to transform the response to JSON
