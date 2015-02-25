@@ -4,8 +4,8 @@ In order to complete exercise 1b, you will need to setup some custom PTC's by fo
 
 ## Installation guide
 
- 1. In **hellobundle/src/main** , overwrite **'java'** folder with the one provided
- 2. In **hellobundle/src/main/resources**, copy/paste **'exercises-ptc-config.xml'** file and the **'wsdl'** folder
+ 1. In **hellobundle/src/main**, overwrite the **'java'** folder with the one provided
+ 2. In **hellobundle/src/main/resources**, copy/paste the **'exercises-ptc-config.xml'** file and the **'wsdl'** folder
  3. In **hellobundle/src/main/webapp/WEB-INF**, copy/paste the **'xslt'** folder
  4. In your terminal, run **'mvn package'** at the root of the _hellobundle_ folder
  5. Add **'exercises-ptc-config.xml'** to the list of PTC configuration files in **portalserver/src/main/webapp/WEB-INF/web.xml**, e.g.:
