@@ -34,11 +34,11 @@ In this module, we dive into more advanced widget concepts. We will first look a
  - Add "exercises-ptc-config.xml" to the list of PTC configuration files in portalserver\src\main\webapp\WEB-INF\web.xml, e.g.:
 
 ```xml
-    <!-- PTC configuration files list. -->
-    <context-param>
-        <param-name>com.backbase.portal.ptc.web.CONFIG_FILE</param-name>
-        <param-value>classpath:/ptc-config.xml,classpath:/ptc-launchpad.xml,classpath:/exercises-ptc-config.xml</param-value>
-    </context-param>
+<!-- PTC configuration files list. -->
+<context-param>
+    <param-name>com.backbase.portal.ptc.web.CONFIG_FILE</param-name>
+    <param-value>classpath:/ptc-config.xml,classpath:/ptc-launchpad.xml,classpath:/exercises-ptc-config.xml</param-value>
+</context-param>
 ```
 
 Then run `mvn package` at the root of portalserver!
