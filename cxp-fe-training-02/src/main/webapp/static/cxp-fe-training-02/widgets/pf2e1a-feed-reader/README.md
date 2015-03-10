@@ -19,7 +19,7 @@ In this exercise, you will learn how to use `g:include` to retrieve and transfor
 
 #### Additional resources
 
- - [server-catalog-widgets.xml](../../../../../config-info/import/server-catalog-widgets.xml)
+ - [server-catalog-widgets.xml](../../../../../config-info/import/server-catalog-widgets.xml#L3-L27)
 
 #### References
 

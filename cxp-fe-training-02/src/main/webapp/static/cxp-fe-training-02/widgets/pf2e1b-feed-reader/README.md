@@ -9,16 +9,16 @@ _note: All exercises use the [standard portal set-up for backbase trainings](htt
 
 #### Description
 
-To use proxy pipes
-
-#### Prerequisites
-
-In order to complete this exercise, you will need to install and configure some java code provided in the [materials](materials/) folder. Please refer to [usage.md](usage.md) to learn how to set things up.
+In this exercise, you will learn how to retrieve data from proxy pipes using JavaScript.
 
 #### Steps
 
  - Do an ajax call to an RSS feed and use provided "jsonPipe" to transform the response to JSON
  - Create and use a Mustache template to render it
+
+#### Additional resources
+
+ - [server-catalog-widgets.xml](../../../../../config-info/import/server-catalog-widgets.xml#L28-L52)
 
 #### References
 
