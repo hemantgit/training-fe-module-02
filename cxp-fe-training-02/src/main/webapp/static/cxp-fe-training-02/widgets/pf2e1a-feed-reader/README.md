@@ -9,13 +9,17 @@ _note: All exercises use the [standard portal set-up for backbase trainings](htt
 
 #### Description
 
-To use "G:INCLUDE"
+In this exercise, you will learn how to use `g:include` to retrieve and transform content from a remote RSS feed, and display it in your widget.
 
 #### Steps
 
  - Create a new widget named "Feed Reader", based on the Widget Development Methodology
  - Let the widget include the content of an RSS feed using **g:include**
  - Use provided rssPipe to transform xml to html
+
+#### Additional resources
+
+ - [server-catalog-widgets.xml](../../../../../config-info/import/server-catalog-widgets.xml)
 
 #### References
 

@@ -11,9 +11,27 @@ In this module, we dive into more advanced widget concepts. We will first look a
  - **pf2e2**: How to create ICE templates ([solution](cxp-fe-training-02/src/main/webapp/static/cxp-fe-training-02/widgets/pf2e2-content))
  - **pf2e3**: How to create widget chromes ([solution](cxp-fe-training-02/src/main/webapp/static/cxp-fe-training-02/html/chromes))
 
-### Configuration
+### Installation & Configuration
 
-Add "exercises-ptc-config.xml" to the list of PTC configuration files in portalserver\src\main\webapp\WEB-INF\web.xml, e.g.:
+ 1. Copy and paste the **"cxp-fe-training-02"** folder in the **"bundles"** folder of your Launchpad 0.11.x project
+ 2. If it is not already there, add the `bundles.dir` property as a new property in portalserver/pom.xml:
+
+```xml
+<bundles.dir>${project.parent.basedir}/bundles</bundles.dir>
+```
+
+ 3. Add the bundle resource base in portalserver/pom.xml, e.g.:
+
+```xml
+<resourceBases>
+ <resourceBase>${bundles.dir}/cxp-fe-training-02/src/main/webapp</resourceBase>
+ <resourceBase>${project.basedir}/src/main/webapp</resourceBase>
+ <resourceBase>${work.dir}</resourceBase>
+</resourceBases>
+<extraClasspath>${bundles.dir}/cxp-fe-training-02/target/classes;${basedir}/target/classes/;${basedir}/target/portalserver/WEB-INF/classes</extraClasspath>
+```
+
+ 4. Add "exercises-ptc-config.xml" to the list of PTC configuration files in portalserver\src\main\webapp\WEB-INF\web.xml, e.g.:
 
 ```xml
     <!-- PTC configuration files list. -->
