@@ -31,7 +31,7 @@ In this module, we dive into more advanced widget concepts. We will first look a
 <extraClasspath>${bundles.dir}/cxp-fe-training-02/target/classes;${basedir}/target/classes/;${basedir}/target/portalserver/WEB-INF/classes</extraClasspath>
 ```
 
- - Add "exercises-ptc-config.xml" to the list of PTC configuration files in **portalserver\src\main\webapp\WEB-INF\web.xml**, e.g.:
+ - Add "exercises-ptc-config.xml" to the list of PTC configuration files in **portalserver/src/main/webapp/WEB-INF/web.xml**, e.g.:
 
 ```xml
 <!-- PTC configuration files list. -->
