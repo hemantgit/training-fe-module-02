@@ -19,7 +19,7 @@ In this exercise, you will learn how to retrieve data from proxy pipes using Jav
 #### Additional resources
 
  - [PTC configuration](../../../../../resources/exercises-ptc-config.xml)
- - [Xml2JSON transformer](../../../../src/main/java/com/backbase/exercises/ptc/transformers/Xml2JSONResponseTransformer.java)
+ - [Xml2JSON transformer](../../../../../java/com/backbase/exercises/ptc/transformers/Xml2JSONResponseTransformer.java)
  - [server-catalog-widgets.xml](../../../../../config-info/import/server-catalog-widgets.xml#L28-L52)
 
 #### References
