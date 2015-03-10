@@ -19,6 +19,8 @@ In this exercise, you will learn how to use `g:include` to retrieve and transfor
 
 #### Additional resources
 
+ - [PTC configuration](../../../../../resources/exercises-ptc-config.xml)
+ - [RSS xsl](../../../../WEB-INF/xslt/rss/rss2xhtml.xsl)
  - [server-catalog-widgets.xml](../../../../../config-info/import/server-catalog-widgets.xml#L3-L27)
 
 #### References
