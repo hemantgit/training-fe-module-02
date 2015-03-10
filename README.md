@@ -13,14 +13,14 @@ In this module, we dive into more advanced widget concepts. We will first look a
 
 ### Installation & Configuration
 
- 1. Copy and paste the **"cxp-fe-training-02"** folder in the **"bundles"** folder of your Launchpad 0.11.x project
- 2. If it is not already there, add the `bundles.dir` property as a new property in portalserver/pom.xml:
+ -  Copy and paste the **"cxp-fe-training-02"** folder in the **"bundles"** folder of your Launchpad 0.11.x project
+ - If it is not already there, add the `bundles.dir` property as a new property in portalserver/pom.xml:
 
 ```xml
 <bundles.dir>${project.parent.basedir}/bundles</bundles.dir>
 ```
 
- 3. Add the bundle resource base in portalserver/pom.xml, e.g.:
+ - Add the bundle resource base in portalserver/pom.xml, e.g.:
 
 ```xml
 <resourceBases>
@@ -31,7 +31,7 @@ In this module, we dive into more advanced widget concepts. We will first look a
 <extraClasspath>${bundles.dir}/cxp-fe-training-02/target/classes;${basedir}/target/classes/;${basedir}/target/portalserver/WEB-INF/classes</extraClasspath>
 ```
 
- 4. Add "exercises-ptc-config.xml" to the list of PTC configuration files in portalserver\src\main\webapp\WEB-INF\web.xml, e.g.:
+ - Add "exercises-ptc-config.xml" to the list of PTC configuration files in portalserver\src\main\webapp\WEB-INF\web.xml, e.g.:
 
 ```xml
     <!-- PTC configuration files list. -->
