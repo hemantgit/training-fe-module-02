@@ -13,7 +13,7 @@ In this exercise, you will learn how to retrieve data from proxy pipes using Jav
 
 #### Steps
 
- - Do an ajax call to an RSS feed and use provided "jsonPipe" to transform the response to JSON
+ - Do an ajax call to an RSS feed and use provided **jsonPipe** to transform the response to JSON
  - Create and use a Mustache template to render it
 
 #### Additional resources

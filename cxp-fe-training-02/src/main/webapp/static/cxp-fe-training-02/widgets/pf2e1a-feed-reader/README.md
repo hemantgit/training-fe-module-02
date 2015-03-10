@@ -13,7 +13,7 @@ In this exercise, you will learn how to use `g:include` to retrieve and transfor
 
 #### Steps
 
- - Create a new widget named "Feed Reader", based on the Widget Development Methodology
+ - Create a new widget named **Feed Reader**, based on the Widget Development Methodology
  - Let the widget include the content of an RSS feed using **g:include**
  - Use provided rssPipe to transform xml to html
 
