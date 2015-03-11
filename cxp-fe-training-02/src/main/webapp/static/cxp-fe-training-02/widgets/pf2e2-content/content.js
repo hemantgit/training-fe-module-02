@@ -1,6 +1,6 @@
 /**
- * Copyright © 2003/2013 Backbase B.V.
- */
+* Copyright © 2003/2013 Backbase B.V.
+*/
 
 
 if (!window.be) var be = {};
@@ -17,29 +17,29 @@ be.contentWidget = (function($, bd) {
                 oWidget.iceConfig = be.ice.config;
 
                 var isMasterpage = be.utils.module('top.bd.PageMgmtTree.selectedLink')['isMasterPage'],
-                    isManageable = isMasterpage || (
-                        oWidget.model.manageable === 'true' ||
-                        oWidget.model.manageable === '' ||
-                        oWidget.model.manageable === undefined
-                    );
+                isManageable = isMasterpage || (
+                    oWidget.model.manageable === 'true' ||
+                    oWidget.model.manageable === '' ||
+                    oWidget.model.manageable === undefined
+                );
 
                 if (isManageable && be.ice.controller) {
                     var templateUrl = String(oWidget.getPreference('templateUrl')),
-                        enableEditing = function(){
+                    enableEditing = function(){
 
-                            // it is possible to swap template for editorial
-                            // here is an example for image template
-                            if(templateUrl.match(/\/image\.html$/)){
-                                templateUrl = templateUrl.replace(/\/image\.html$/, '/image-editorial.html');
-                            }
+                        // it is possible to swap template for editorial
+                        // here is an example for image template
+                        if(templateUrl.match(/\/image\.html$/)){
+                            templateUrl = templateUrl.replace(/\/image\.html$/, '/image-editorial.html');
+                        }
 
-                            return be.ice.controller.edit(oWidget, templateUrl)
-                                .then(function(dom) {
-                                    $(oWidget.body).find('.bp-g-include').html(dom);
+                        return be.ice.controller.edit(oWidget, templateUrl)
+                        .then(function(dom) {
+                            $(oWidget.body).find('.bp-g-include').html(dom);
 
-                                    return dom;
-                                });
-                        };
+                            return dom;
+                        });
+                    };
 
                     // this widget has property rendering example (template: simple.html)
                     // so we need to refresh widget after property 'title' modified

@@ -7,7 +7,7 @@ define(['portal!jquery'], function($) {
 	};
 
 	var OPTIONS = {
-	    PIPE_URL: b$.portal.config.serverRoot + "/proxy?pipe=jsonPipe"
+		PIPE_URL: b$.portal.config.serverRoot + "/proxy?pipe=jsonPipe"
 	};
 
 	function FeedReader(widget) {
@@ -20,25 +20,25 @@ define(['portal!jquery'], function($) {
 	}
 
 	FeedReader.prototype.init = function() {
-	    var self = this;
-	    this.getJSON();
-	    this.widget.addEventListener('preferencesSaved', function(event) {
-            self.getJSON();
-        });
+		var self = this;
+		this.getJSON();
+		this.widget.addEventListener('preferencesSaved', function(event) {
+			self.getJSON();
+		});
 	};
 
 	FeedReader.prototype.getJSON = function() {
 		var self = this;
-        $.getJSON(OPTIONS.PIPE_URL, {
-            url : self.widget.model.getPreference("url"),
-        }, function(jsonArray) {
-            self.renderItems(jsonArray);
-        });
+		$.getJSON(OPTIONS.PIPE_URL, {
+			url : self.widget.model.getPreference("url"),
+		}, function(jsonArray) {
+			self.renderItems(jsonArray);
+		});
 	};
 
 	FeedReader.prototype.renderItems = function(items) {
-        var html = Mustache.render(this.template, items);
-        this.$main.html(html);
+		var html = Mustache.render(this.template, items);
+		this.$main.html(html);
 	};
 
 	return function(widget) {

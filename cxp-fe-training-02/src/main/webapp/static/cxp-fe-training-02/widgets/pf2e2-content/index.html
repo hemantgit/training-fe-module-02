@@ -1,70 +1,70 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:g="http://www.backbase.com/2008/gadget" xml:lang="en">
-	<head>
-		<script src="content.js" type="text/javascript"></script>
-		<link href="content.css" rel="stylesheet" type="text/css" />
-		<link href="../../css/templates.css" rel="stylesheet" type="text/css" />
+<head>
+	<script src="content.js" type="text/javascript"></script>
+	<link href="content.css" rel="stylesheet" type="text/css" />
+	<link href="../../css/templates.css" rel="stylesheet" type="text/css" />
 
-		<title>ICE II</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta name="author" content="Backbase" />
-		<meta name="keywords" content="widget" />
-		<meta name="copyright" content="Copyright 2003-2013 Backbase" />
-		<meta name="description" content="Widget for editing content" />
+	<title>ICE II</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="Backbase" />
+	<meta name="keywords" content="widget" />
+	<meta name="copyright" content="Copyright 2003-2013 Backbase" />
+	<meta name="description" content="Widget for editing content" />
 
-		<g:preferences>
-			<g:preference name="templateUrl" label="Content Template" type="select-one" default="$(contextRoot)/static/cxp-fe-training-02/templates/content/simple.html">
-				<g:enumeration label="Article small" value="$(contextRoot)/static/cxp-fe-training-02/templates/content/article-vertical.html"/>
-				<g:enumeration label="Article small color" value="$(contextRoot)/static/cxp-fe-training-02/templates/content/article-vertical-colour.html"/>
-				<g:enumeration label="Article left" value="$(contextRoot)/static/cxp-fe-training-02/templates/content/article-left.html"/>
-				<g:enumeration label="Article right" value="$(contextRoot)/static/cxp-fe-training-02/templates/content/article-right.html"/>
-				<g:enumeration label="Banner" value="$(contextRoot)/static/cxp-fe-training-02/templates/content/banner.html"/>
-				<g:enumeration label="Headline article" value="$(contextRoot)/static/cxp-fe-training-02/templates/content/headline-article.html"/>
-				<g:enumeration label="Headline banner" value="$(contextRoot)/static/cxp-fe-training-02/templates/content/headline-banner.html"/>
-				<g:enumeration label="Image" value="$(contextRoot)/static/cxp-fe-training-02/templates/content/image.html"/>
-				<g:enumeration label="Quote" value="$(contextRoot)/static/cxp-fe-training-02/templates/content/quote.html"/>
-				<g:enumeration label="Simple template" value="$(contextRoot)/static/cxp-fe-training-02/templates/content/simple.html"/>
-                <g:enumeration label="Media object" value="$(contextRoot)/static/cxp-fe-training-02/templates/content/media-object.html"/>
-			</g:preference>
+	<g:preferences>
+		<g:preference name="templateUrl" label="Content Template" type="select-one" default="$(contextRoot)/static/cxp-fe-training-02/templates/content/simple.html">
+			<g:enumeration label="Article small" value="$(contextRoot)/static/cxp-fe-training-02/templates/content/article-vertical.html"/>
+			<g:enumeration label="Article small color" value="$(contextRoot)/static/cxp-fe-training-02/templates/content/article-vertical-colour.html"/>
+			<g:enumeration label="Article left" value="$(contextRoot)/static/cxp-fe-training-02/templates/content/article-left.html"/>
+			<g:enumeration label="Article right" value="$(contextRoot)/static/cxp-fe-training-02/templates/content/article-right.html"/>
+			<g:enumeration label="Banner" value="$(contextRoot)/static/cxp-fe-training-02/templates/content/banner.html"/>
+			<g:enumeration label="Headline article" value="$(contextRoot)/static/cxp-fe-training-02/templates/content/headline-article.html"/>
+			<g:enumeration label="Headline banner" value="$(contextRoot)/static/cxp-fe-training-02/templates/content/headline-banner.html"/>
+			<g:enumeration label="Image" value="$(contextRoot)/static/cxp-fe-training-02/templates/content/image.html"/>
+			<g:enumeration label="Quote" value="$(contextRoot)/static/cxp-fe-training-02/templates/content/quote.html"/>
+			<g:enumeration label="Simple template" value="$(contextRoot)/static/cxp-fe-training-02/templates/content/simple.html"/>
+			<g:enumeration label="Media object" value="$(contextRoot)/static/cxp-fe-training-02/templates/content/media-object.html"/>
+		</g:preference>
 			<g:preference name="title" label="Title" type="text" />
 			<g:preference name="widgetChrome" label="Widget Chrome" type="select-one" default="$(contextRoot)/static/backbase.com.2012.aurora/html/chromes/widget_default.html">
-				<g:enumeration value="$(contextRoot)/static/backbase.com.2012.aurora/html/chromes/widget_none.html" label="No Chrome" />
-				<g:enumeration value="$(contextRoot)/static/backbase.com.2012.aurora/html/chromes/widget_default.html" label="Default Chrome" />
-			</g:preference>
-		</g:preferences>
+			<g:enumeration value="$(contextRoot)/static/backbase.com.2012.aurora/html/chromes/widget_none.html" label="No Chrome" />
+			<g:enumeration value="$(contextRoot)/static/backbase.com.2012.aurora/html/chromes/widget_default.html" label="Default Chrome" />
+		</g:preference>
+	</g:preferences>
 
-	</head>
-	<body class="be-ice-widget-sample" g:onload="return be.contentWidget.start(__WIDGET__)">
+</head>
+<body class="be-ice-widget-sample" g:onload="return be.contentWidget.start(__WIDGET__)">
 
-		<g:include proxy="false" src="$(contextRoot)/contenttemplates/rendered">
-			<g:http-preference-param-map dataType="contentRef" />
-			<g:http-preference-param-map dataType="linkRef" />
-			<g:http-param name="title" value="${title}" />
-			<g:http-param name="templateUrl" value="${templateUrl}" />
-		</g:include>
+	<g:include proxy="false" src="$(contextRoot)/contenttemplates/rendered">
+		<g:http-preference-param-map dataType="contentRef" />
+		<g:http-preference-param-map dataType="linkRef" />
+		<g:http-param name="title" value="${title}" />
+		<g:http-param name="templateUrl" value="${templateUrl}" />
+	</g:include>
 
-	</body>
+</body>
 </html>
 
 
 <!--
-			<g:http-param name="properties.title" value="${title}" />
-			<g:http-preference-param-map dataType="string" name="properties" />
+<g:http-param name="properties.title" value="${title}" />
+<g:http-preference-param-map dataType="string" name="properties" />
 
-		// it's possible to use content ref object as a templateUrl (editing is not enabled yet)
-			<g:http-param name="templateUrl" value="${contentPath}" />
+// it's possible to use content ref object as a templateUrl (editing is not enabled yet)
+<g:http-param name="templateUrl" value="${contentPath}" />
 
 
-		// it's possible to pass properties into a template
-			<g:http-preference-param-map name="properties" dataType="string" />
-			<g:http-param name="title" value="${templateUrl}" />
+// it's possible to pass properties into a template
+<g:http-preference-param-map name="properties" dataType="string" />
+<g:http-param name="title" value="${templateUrl}" />
 
-		<g:include proxy="true">
-			<g:http-proxy-param name="pipe" value="icePipe"/>
-			<g:http-preference-param-set name='content' dataType="contentRef" />
-			<g:http-preference-param-set dataType="linkRef" />
-			<g:http-param name="renditionPath" value="${renditionPath}" />
-			<g:http-param name="version" value="${version}" />
-			<g:http-param name="mustacheTemplateUrl" value="${templateUrl}" />
+<g:include proxy="true">
+<g:http-proxy-param name="pipe" value="icePipe"/>
+<g:http-preference-param-set name='content' dataType="contentRef" />
+<g:http-preference-param-set dataType="linkRef" />
+<g:http-param name="renditionPath" value="${renditionPath}" />
+<g:http-param name="version" value="${version}" />
+<g:http-param name="mustacheTemplateUrl" value="${templateUrl}" />
 
-		</g:include> -->
+</g:include> -->

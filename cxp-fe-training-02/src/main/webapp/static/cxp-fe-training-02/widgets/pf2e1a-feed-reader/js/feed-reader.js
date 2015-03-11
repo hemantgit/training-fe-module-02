@@ -6,11 +6,11 @@ define([], function() {
 	}
 
 	FeedReader.prototype.init = function() {
-        var self = this;
-        // refresh on preferences changed
-        this.widget.addEventListener('preferencesSaved', function(event) {
-            self.widget.refreshHTML();
-        });
+		var self = this;
+		// refresh on preferences changed
+		this.widget.addEventListener('preferencesSaved', function(event) {
+			self.widget.refreshHTML();
+		});
 	};
 
 	return function(widget) {
