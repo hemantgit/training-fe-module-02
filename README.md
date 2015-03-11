@@ -24,9 +24,9 @@ In this module, we dive into more advanced widget concepts. We will first look a
 
 ```xml
 <resourceBases>
- <resourceBase>${bundles.dir}/cxp-fe-training-02/src/main/webapp</resourceBase>
- <resourceBase>${project.basedir}/src/main/webapp</resourceBase>
- <resourceBase>${work.dir}</resourceBase>
+    <resourceBase>${bundles.dir}/cxp-fe-training-02/src/main/webapp</resourceBase>
+    <resourceBase>${project.basedir}/src/main/webapp</resourceBase>
+    <resourceBase>${work.dir}</resourceBase>
 </resourceBases>
 <extraClasspath>${bundles.dir}/cxp-fe-training-02/target/classes;${basedir}/target/classes/;${basedir}/target/portalserver/WEB-INF/classes</extraClasspath>
 ```
