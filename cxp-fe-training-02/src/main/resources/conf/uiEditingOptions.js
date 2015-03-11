@@ -13,9 +13,9 @@
 //Launchpad UI config
 bd.uiEditingOptions = {
 
-	//LaunchPad widget chorme preference config.
-	widgetPreferenceSelections: {
-		widgetChrome: [
+    //LaunchPad widget chorme preference config.
+    widgetPreferenceSelections: {
+        widgetChrome: [
             {label: "Custom Chrome",                    value: "$(contextRoot)/static/cxp-fe-training-02/html/chromes/custom-chrome.html"},
             {label: "Aurora No Chrome",                 value: "$(contextRoot)/static/backbase.com.2012.aurora/html/chromes/widget_none.html"},
             {label: "Aurora Default Chrome",            value: "$(contextRoot)/static/backbase.com.2012.aurora/html/chromes/widget_default.html"},
@@ -26,26 +26,26 @@ bd.uiEditingOptions = {
             {label: "Launcher Tab Chrome",              value: "$(contextRoot)/static/launchpad/chromes/launcher/chrome-tab.html"},
             {label: "Launcher Tab Chrome (Hidden)",     value: "$(contextRoot)/static/launchpad/chromes/launcher/chrome-tab-hidden.html"},
             {label: "Springboard Chrome",               value: "$(contextRoot)/static/launchpad/chromes/springboard/chrome-springboard.html"}
-		]
-	},
+        ]
+    },
 
-	//UI properties of the catalog browser
-	catalog:{
-		//set the max amount of items returned by catalog web-service per each request
-		itemsPerRequest:100
-	},
+    //UI properties of the catalog browser
+    catalog:{
+        //set the max amount of items returned by catalog web-service per each request
+        itemsPerRequest:100
+    },
 
-	//enable/disable user & group management, allowing a client to use their own user/group providers
-	usersAndGroups:{
-		allowManagement:true
-	},
+    //enable/disable user & group management, allowing a client to use their own user/group providers
+    usersAndGroups:{
+        allowManagement:true
+    },
 
-	defaultPageTemplates: {
-		tablet: "LaunchpadPageTemplate",
-		mobile: "LaunchpadPageTemplate",
-		smart: "LaunchpadPageTemplate",
-		web: "LaunchpadPageTemplate"
-	},
+    defaultPageTemplates: {
+        tablet: "LaunchpadPageTemplate",
+        mobile: "LaunchpadPageTemplate",
+        smart: "LaunchpadPageTemplate",
+        web: "LaunchpadPageTemplate"
+    },
 
     /*
     * portalmanager 5.5 new configuration for devices.
@@ -100,7 +100,7 @@ bd.uiEditingOptions = {
         },
         // title used as a prefix: '.bbTemplate-className {...}'
         lp: {
-			contentCss : bd.contextRoot + '/static/backbase.com.2011.ice/css/ice-ckeditorContent.css',
+            contentCss : bd.contextRoot + '/static/backbase.com.2011.ice/css/ice-ckeditorContent.css',
             styleSet: [
                 {name:'Tagline',element:'span',attributes:{'class' : 'lp-tagline'}},
                 {name:'Banner',element:'span',attributes:{'class' : 'lp-tagline-banner'}},
@@ -110,100 +110,100 @@ bd.uiEditingOptions = {
         }
     },
 
-	//the cmis metaData that will show as the attribute in the image tag - ice widget only
-	//{ [cmis meta data name] : [attribute name in the image tag] }
-	iceWidgetImageMetaData: {
-		metaDataList: {
-			'bb:altText': 'alt',
-			'bb:title': 'title',
-			'bb:subTitle': 'subtitle'
-		}
-	},
+    //the cmis metaData that will show as the attribute in the image tag - ice widget only
+    //{ [cmis meta data name] : [attribute name in the image tag] }
+    iceWidgetImageMetaData: {
+        metaDataList: {
+            'bb:altText': 'alt',
+            'bb:title': 'title',
+            'bb:subTitle': 'subtitle'
+        }
+    },
 
-	/**
-	 *   Default SEO Setting
-	 */
+    /**
+     *   Default SEO Setting
+     */
 
-	defaultSEOConf: {
-		defaultSEO: [
-			{label: 'Locale', name:'bd_seo_locale', value: '', tooltip: 'Set the language of this page.', docLink: ''},
-			{label: 'Robots', name:'bd_seo_robots', value: '', tooltip: '<p>Instruct search engines how to handle this page.</p><p><b>Index/No Index:</b> whether search engines may index this page.</p><p><b>Follow/No Follow:</b> whether search engines may follow links on this page.</p>', docLink: ''},
-			{label: 'Canonical', name:'bd_seo_canonical', value: '', tooltip: 'Set the canonical URL for this page', docLink: '', type: 'linkRef'},
-			{label: 'Description', name:'bd_seo_description', value: '', tooltip: 'Add search terms that describe this page.', docLink: ''}
-		],
-		'bd_seo_robots': [
-			{name: 'Please select one', value: ''},
-			{name: 'Index', value: 'index'},
-			{name: 'No Index', value: 'noindex'},
-			{name: 'Follow', value: 'follow'},
-			{name: 'No Follow', value: 'nofollow'},
-			{name: 'Index, Follow', value: 'index, follow'},
-			{name: 'No Index, No Follow', value: 'noindex, nofollow'},
-			{name: 'None', value: 'none'}
-		],
-		'bd_seo_locale': [
-			{name: 'Please select one', value: ''},
-			{name: 'Arabic (Saudi Arabia)', value: 'ar_SA'},
-			{name: 'Arabic (United Arab Emirates)', value: 'ar_AE'},
-			{name: 'Chinese (China)', value: 'zh_CN'},
-			{name: 'Dutch (Netherlands)', value: 'nl_NL'},
-			{name: 'English (Australia)', value: 'en_AU'},
-			{name: 'English (South Africa)', value: 'en_ZA'},
-			{name: 'English (United Kingdom)', value: 'en_GB'},
-			{name: 'English (United States)', value: 'en_US'},
-			{name: 'French (France)', value: 'fr_FR'},
-			{name: 'German (Germany)', value: 'de_DE'},
-			{name: 'Hebrew (Israel)', value: 'iw_IL'},
-			{name: 'Hindi (India)', value: 'hi_IN'},
-			{name: 'Indonesian (Indonesia)', value: 'in_ID'},
-			{name: 'Italian (Italy)', value: 'it_IT'},
-			{name: 'Japanese (Japan)', value: 'ja_JP'},
-			{name: 'Malay (Malaysia)', value: 'ms_MY'},
-			{name: 'Portuguese (Brazil)', value: 'pt_BR'},
-			{name: 'Portuguese (Portugal)', value: 'pt_PT'},
-			{name: 'Russian (Russia)', value: 'ru_RU'},
-			{name: 'Spanish (Spain)', value: 'es_ES'}
-		]
-	},
+    defaultSEOConf: {
+        defaultSEO: [
+            {label: 'Locale', name:'bd_seo_locale', value: '', tooltip: 'Set the language of this page.', docLink: ''},
+            {label: 'Robots', name:'bd_seo_robots', value: '', tooltip: '<p>Instruct search engines how to handle this page.</p><p><b>Index/No Index:</b> whether search engines may index this page.</p><p><b>Follow/No Follow:</b> whether search engines may follow links on this page.</p>', docLink: ''},
+            {label: 'Canonical', name:'bd_seo_canonical', value: '', tooltip: 'Set the canonical URL for this page', docLink: '', type: 'linkRef'},
+            {label: 'Description', name:'bd_seo_description', value: '', tooltip: 'Add search terms that describe this page.', docLink: ''}
+        ],
+        'bd_seo_robots': [
+            {name: 'Please select one', value: ''},
+            {name: 'Index', value: 'index'},
+            {name: 'No Index', value: 'noindex'},
+            {name: 'Follow', value: 'follow'},
+            {name: 'No Follow', value: 'nofollow'},
+            {name: 'Index, Follow', value: 'index, follow'},
+            {name: 'No Index, No Follow', value: 'noindex, nofollow'},
+            {name: 'None', value: 'none'}
+        ],
+        'bd_seo_locale': [
+            {name: 'Please select one', value: ''},
+            {name: 'Arabic (Saudi Arabia)', value: 'ar_SA'},
+            {name: 'Arabic (United Arab Emirates)', value: 'ar_AE'},
+            {name: 'Chinese (China)', value: 'zh_CN'},
+            {name: 'Dutch (Netherlands)', value: 'nl_NL'},
+            {name: 'English (Australia)', value: 'en_AU'},
+            {name: 'English (South Africa)', value: 'en_ZA'},
+            {name: 'English (United Kingdom)', value: 'en_GB'},
+            {name: 'English (United States)', value: 'en_US'},
+            {name: 'French (France)', value: 'fr_FR'},
+            {name: 'German (Germany)', value: 'de_DE'},
+            {name: 'Hebrew (Israel)', value: 'iw_IL'},
+            {name: 'Hindi (India)', value: 'hi_IN'},
+            {name: 'Indonesian (Indonesia)', value: 'in_ID'},
+            {name: 'Italian (Italy)', value: 'it_IT'},
+            {name: 'Japanese (Japan)', value: 'ja_JP'},
+            {name: 'Malay (Malaysia)', value: 'ms_MY'},
+            {name: 'Portuguese (Brazil)', value: 'pt_BR'},
+            {name: 'Portuguese (Portugal)', value: 'pt_PT'},
+            {name: 'Russian (Russia)', value: 'ru_RU'},
+            {name: 'Spanish (Spain)', value: 'es_ES'}
+        ]
+    },
 
-	/**
-	 * Mapping different CMIS type for different type of file
-	 */
+    /**
+     * Mapping different CMIS type for different type of file
+     */
 
-	cmisTypeData:{
-		'text':'bb:richtext',
-		'image':'bb:image',
-		'link':'bb:link'
-	},
+    cmisTypeData:{
+        'text':'bb:richtext',
+        'image':'bb:image',
+        'link':'bb:link'
+    },
 
 
-	repositoryBrowser:{
-		fullCRUDToManagerRole:true,
-		maxFileLoadedPerTime:30,
-		autoLoadFile:false,
-		// defined what kind of file will be showing up in the embed repo browser (ex. repo browser in designer toolbar and in the rich text editor toolbar)
-		// '' = all type, 'image' = image type
-		filesType:'',
-		// the metaData showing in the preview
-		//[cmis meta data name] : [name in the preview] or null for default display name
-		metaDataList:{
-			'cmis:contentStreamLength':'Size',
-			'cmis:name':'File Name',
-			'cmis:path':'Path',
-			'cmis:createdBy':'Created By',
-			'cmis:lastModifiedBy':'Last Updated By',
-			'cmis:creationDate':'Creation Date',
-			'cmis:lastModificationDate':'Last Updated Date',
-			'bb:altText':'Alternative Text',
-			'bb:title':null,
-			'bb:subTitle':null,
-			'cmis:versionSeriesId':null
-		}
-	},
+    repositoryBrowser:{
+        fullCRUDToManagerRole:true,
+        maxFileLoadedPerTime:30,
+        autoLoadFile:false,
+        // defined what kind of file will be showing up in the embed repo browser (ex. repo browser in designer toolbar and in the rich text editor toolbar)
+        // '' = all type, 'image' = image type
+        filesType:'',
+        // the metaData showing in the preview
+        //[cmis meta data name] : [name in the preview] or null for default display name
+        metaDataList:{
+            'cmis:contentStreamLength':'Size',
+            'cmis:name':'File Name',
+            'cmis:path':'Path',
+            'cmis:createdBy':'Created By',
+            'cmis:lastModifiedBy':'Last Updated By',
+            'cmis:creationDate':'Creation Date',
+            'cmis:lastModificationDate':'Last Updated Date',
+            'bb:altText':'Alternative Text',
+            'bb:title':null,
+            'bb:subTitle':null,
+            'cmis:versionSeriesId':null
+        }
+    },
 
-	pageDesigner:{
-		enableDNDForContainers:true
-	},
+    pageDesigner:{
+        enableDNDForContainers:true
+    },
 
 
     // special to the ckeditor toolbar
@@ -261,30 +261,30 @@ bd.uiEditingOptions = {
         }
     ],
 
-	//assetsPicker
-	assetsPicker : {
-		filterBy : {
-			'PDF' : 'application/pdf',
-			'PNG': 'image/png'
-		},
+    //assetsPicker
+    assetsPicker : {
+        filterBy : {
+            'PDF' : 'application/pdf',
+            'PNG': 'image/png'
+        },
 
-		metaDataList:{
-			'bb:title': 'Title',
-			'bb:altText':'Alternative',
-			'cmis:path':'Path',
-			"cmis:contentStreamMimeType" : 'Base Type',
-			'cmis:objectTypeId' : 'Object Type',
-			'cmis:contentStreamLength':'Size',
-			'cmis:createdBy':'Created By',
-			'cmis:creationDate':'Creation Date',
-			'cmis:lastModifiedBy':'Last Updated By',
-			'cmis:lastModificationDate':'Last Updated Date'
+        metaDataList:{
+            'bb:title': 'Title',
+            'bb:altText':'Alternative',
+            'cmis:path':'Path',
+            "cmis:contentStreamMimeType" : 'Base Type',
+            'cmis:objectTypeId' : 'Object Type',
+            'cmis:contentStreamLength':'Size',
+            'cmis:createdBy':'Created By',
+            'cmis:creationDate':'Creation Date',
+            'cmis:lastModifiedBy':'Last Updated By',
+            'cmis:lastModificationDate':'Last Updated Date'
 
-			//'cmis:name':'File Name',
-			//'bb:subTitle':null,
-			//'cmis:versionSeriesId':null
-		}
-	},
+            //'cmis:name':'File Name',
+            //'bb:subTitle':null,
+            //'cmis:versionSeriesId':null
+        }
+    },
 
     //Filter out element tags and attribute when paste extenal source to ICE widget.
     whiteList:{
@@ -310,94 +310,94 @@ bd.uiEditingOptions = {
         }
     },
 
-	//A list of files types is allowed to drop on canvas.
-	AllowedDNDTypes:{
-		typeList:['bb:richtext', 'image', 'cmis:folder', 'cmis:document']
-	},
-	//default behaviour for creating widget
-	defaultDNDJsonData: {
-		//WThe json contains properties of widget when drop image file.
-		imageFile: {
-			namePrefix: "widget-advanced-content-",
-			extendedItemName: "widget-advanced-content",
-			//The required preferences for the image and text widget. All properties are case sensitive.
-			preferences: {
-				TemplateName: {
-					name: "TemplateName",
-					value: "Standard_Widget",
-					type: "string"
-				},
-				title: {
-					name: "title",
-					value: "Image",
-					type: "string",
-					label: "Title",
-					viewHint: "text-input,user"
-				},
-				src: {
-					name: "src",
-					value: "$(contextRoot)/static/launchpad/widgets/advanced-content-template/index.html",
-					type: "string"
-				},
-				templateUrl: {
-					name: "templateUrl",
-					value: "$(contextRoot)/static/launchpad/html/content/image.html",
-					type: "string",
-					label: "Content Template",
-					viewHint: "text-input,designModeOnly,user"
-				},
-				widgetChrome: {
-					name: "widgetChrome",
-					value: "$(contextRoot)/static/launchpad/chromes/blank/chrome-blank.html",
-					type: "string",
-					label: "Widget Chrome",
-					viewHint: "select-one,designModeOnly,user"
-				}
-			},
-			contentRefName: "contentPath",
-			targetFile: ["image/png", "image/jpg", "image/jpeg", "image/gif", "image/bmp"]
-		},
-		//The json contains properties of widget when drop text file.
-		richTextFile: {
-			namePrefix: "widget-advanced-content-",
-			extendedItemName: "widget-advanced-content",
-			preferences: {
-				TemplateName: {
-					name: "TemplateName",
-					value: "Standard_Widget",
-					type: "string"
-				},
-				title: {
-					name: "title",
-					value: "Text Content",
-					type: "string",
-					label: "Title",
-					viewHint: "text-input,user"
-				},
-				src: {
-					name: "src",
-					value: "$(contextRoot)/static/launchpad/widgets/advanced-content-template/index.html",
-					type: "string"
-				},
-				templateUrl: {
-					name: "templateUrl",
-					value: "$(contextRoot)/static/launchpad/html/content/text.html",
-					type: "string",
-					label: "Content Template",
-					viewHint: "text-input,designModeOnly,user"
-				},
-				widgetChrome: {
-					name: "widgetChrome",
-					value: "$(contextRoot)/static/launchpad/chromes/blank/chrome-blank.html",
-					type: "string",
-					label: "Widget Chrome",
-					viewHint: "select-one,designModeOnly,user"
-				}
-			},
-			contentRefName: "advContent",
-			targetFile: ["text/html", "text/plain"]
-		}
-	}
+    //A list of files types is allowed to drop on canvas.
+    AllowedDNDTypes:{
+        typeList:['bb:richtext', 'image', 'cmis:folder', 'cmis:document']
+    },
+    //default behaviour for creating widget
+    defaultDNDJsonData: {
+        //WThe json contains properties of widget when drop image file.
+        imageFile: {
+            namePrefix: "widget-advanced-content-",
+            extendedItemName: "widget-advanced-content",
+            //The required preferences for the image and text widget. All properties are case sensitive.
+            preferences: {
+                TemplateName: {
+                    name: "TemplateName",
+                    value: "Standard_Widget",
+                    type: "string"
+                },
+                title: {
+                    name: "title",
+                    value: "Image",
+                    type: "string",
+                    label: "Title",
+                    viewHint: "text-input,user"
+                },
+                src: {
+                    name: "src",
+                    value: "$(contextRoot)/static/launchpad/widgets/advanced-content-template/index.html",
+                    type: "string"
+                },
+                templateUrl: {
+                    name: "templateUrl",
+                    value: "$(contextRoot)/static/launchpad/html/content/image.html",
+                    type: "string",
+                    label: "Content Template",
+                    viewHint: "text-input,designModeOnly,user"
+                },
+                widgetChrome: {
+                    name: "widgetChrome",
+                    value: "$(contextRoot)/static/launchpad/chromes/blank/chrome-blank.html",
+                    type: "string",
+                    label: "Widget Chrome",
+                    viewHint: "select-one,designModeOnly,user"
+                }
+            },
+            contentRefName: "contentPath",
+            targetFile: ["image/png", "image/jpg", "image/jpeg", "image/gif", "image/bmp"]
+        },
+        //The json contains properties of widget when drop text file.
+        richTextFile: {
+            namePrefix: "widget-advanced-content-",
+            extendedItemName: "widget-advanced-content",
+            preferences: {
+                TemplateName: {
+                    name: "TemplateName",
+                    value: "Standard_Widget",
+                    type: "string"
+                },
+                title: {
+                    name: "title",
+                    value: "Text Content",
+                    type: "string",
+                    label: "Title",
+                    viewHint: "text-input,user"
+                },
+                src: {
+                    name: "src",
+                    value: "$(contextRoot)/static/launchpad/widgets/advanced-content-template/index.html",
+                    type: "string"
+                },
+                templateUrl: {
+                    name: "templateUrl",
+                    value: "$(contextRoot)/static/launchpad/html/content/text.html",
+                    type: "string",
+                    label: "Content Template",
+                    viewHint: "text-input,designModeOnly,user"
+                },
+                widgetChrome: {
+                    name: "widgetChrome",
+                    value: "$(contextRoot)/static/launchpad/chromes/blank/chrome-blank.html",
+                    type: "string",
+                    label: "Widget Chrome",
+                    viewHint: "select-one,designModeOnly,user"
+                }
+            },
+            contentRefName: "advContent",
+            targetFile: ["text/html", "text/plain"]
+        }
+    }
 };
 
 bd.customStylesSelector = 'lp';
