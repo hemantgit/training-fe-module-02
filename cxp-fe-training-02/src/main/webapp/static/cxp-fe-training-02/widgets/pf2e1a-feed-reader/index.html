@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:g="http://www.backbase.com/2008/gadget">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <title>Feed Reader</title>
+
+    <g:preferences>
+        <g:preference name="url" label="URL" viewHint="user,designModeOnly" type="text" default="http://blog.backbase.com/feed/" />
+    </g:preferences>
+
+</head>
+
+<body class="bt-feed-reader" g:onload="requireWidget(__WIDGET__, 'js/feed-reader');">
+
+    <g:include src="${url}" proxy="true">
+        <g:http-proxy-param name="pipe" value="rssPipe" />
+    </g:include>
+
+</body>
+</html>

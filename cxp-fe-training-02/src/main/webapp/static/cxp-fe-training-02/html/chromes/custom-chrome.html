@@ -1,0 +1,10 @@
+<div data-pid="{{widgetInstanceId}}" class="bp-widget bp-ui-dragRoot panel panel-default">
+    <div class="bp-widget-head panel-heading">
+        <h3 class="panel-title">{{widgetTitle}}</h3>
+    </div>
+    <div class="bp-widget-pref"></div>
+    <div class="bp-widget-body panel-body">{{{widgetContent}}}</div>
+    <div class="bp-widget-foot panel-footer">
+        Status: {{#pref.limit}}Maximum {{value}} open todos!{{/pref.limit}}
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:g="http://www.backbase.com/2008/gadget">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <title>Feed Reader</title>
+
+    <g:preferences>
+        <g:preference name="url" label="URL" viewHint="user,designModeOnly" type="text" default="http://blog.backbase.com/feed/" />
+    </g:preferences>
+
+</head>
+
+<body class="bt-feed-reader" g:onload="requireWidget(__WIDGET__, 'js/feed-reader');">
+
+    <div data-js="bt-feed-reader-main"><p>Feed not loaded yet!</p></div>
+
+    <script data-template="bt-feed-reader-template" type="text/html">
+        <div>
+            <h3>
+                {{channel.title}}
+            </h3>
+            <p>
+                {{{channel.description}}}
+            </p>
+            {{#channel.item}}
+            <h4>
+                {{title}}
+            </h4>
+            <p>
+                {{{description}}}
+                <!--(<a href="{{link}}">read more...</a>)-->
+            </p>
+            <p style="color: #ccc; font-size: 0.7em;">
+                {{dc:creator.#text}}
+            </p>
+            <p style="color: #ccc; font-style: italic; font-size: 0.7em;">
+                {{pubDate}}
+            </p>
+            {{/channel.item}}
+        </div>
+    </script>
+
+</body>
+</html>

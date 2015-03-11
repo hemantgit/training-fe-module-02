@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalog>
+    <widget>
+        <name>pf2e1a-feed-reader</name>
+        <contextItemName>[BBHOST]</contextItemName>
+        <properties>
+            <property name="TemplateName">
+                <value type="string">Standard_Widget</value>
+            </property>
+            <property name="title">
+                <value type="string">(PF2E1a) Feed Reader Widget</value>
+            </property>
+            <property name="thumbnailUrl">
+                <value type="string">$(contextRoot)/static/dashboard/media/icons/icons-widgets_01-default.png</value>
+            </property>
+            <property label="Widget Chrome" name="widgetChrome" viewHint="select-one,user,designModeOnly">
+                <value type="string">$(contextRoot)/static/backbase.com.2012.aurora/html/chromes/widget_default.html</value>
+            </property>
+            <property name="src">
+                <value type="string">$(contextRoot)/static/cxp-fe-training-02/widgets/pf2e1a-feed-reader/index.html</value>
+            </property>
+        </properties>
+        <tags>
+            <tag type="section">training widgets</tag>
+            <tag type="regular">training</tag>
+        </tags>
+    </widget>
+    <widget>
+        <name>pf2e1b-feed-reader</name>
+        <contextItemName>[BBHOST]</contextItemName>
+        <properties>
+            <property name="TemplateName">
+                <value type="string">Standard_Widget</value>
+            </property>
+            <property name="title">
+                <value type="string">(PF2E1b) Feed Reader Widget</value>
+            </property>
+            <property name="thumbnailUrl">
+                <value type="string">$(contextRoot)/static/dashboard/media/icons/icons-widgets_01-default.png</value>
+            </property>
+            <property label="Widget Chrome" name="widgetChrome" viewHint="select-one,user,designModeOnly">
+                <value type="string">$(contextRoot)/static/backbase.com.2012.aurora/html/chromes/widget_default.html</value>
+            </property>
+            <property name="src">
+                <value type="string">$(contextRoot)/static/cxp-fe-training-02/widgets/pf2e1b-feed-reader/index.html</value>
+            </property>
+        </properties>
+        <tags>
+            <tag type="section">training widgets</tag>
+            <tag type="regular">training</tag>
+        </tags>
+    </widget>
+    <widget>
+        <name>pf2e2-content</name>
+        <contextItemName>[BBHOST]</contextItemName>
+        <properties>
+            <property name="TemplateName">
+                <value type="string">Standard_Widget</value>
+            </property>
+            <property name="title">
+                <value type="string">(PF2E2) Content Widget</value>
+            </property>
+            <property name="thumbnailUrl">
+                <value type="string">$(contextRoot)/static/dashboard/media/icons/icons-widgets_01-default.png</value>
+            </property>
+            <property label="Widget Chrome" name="widgetChrome" viewHint="select-one,user,designModeOnly">
+                <value type="string">$(contextRoot)/static/backbase.com.2012.aurora/html/chromes/widget_default.html</value>
+            </property>
+            <property name="src">
+                <value type="string">$(contextRoot)/static/cxp-fe-training-02/widgets/pf2e2-content/index.html</value>
+            </property>
+        </properties>
+        <tags>
+            <tag type="section">training widgets</tag>
+            <tag type="regular">training</tag>
+        </tags>
+    </widget>
+</catalog>
