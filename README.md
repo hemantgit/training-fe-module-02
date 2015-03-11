@@ -13,7 +13,7 @@ In this module, we dive into more advanced widget concepts. We will first look a
 
 ### Installation & Configuration
 
- -  Copy and paste the **cxp-fe-training-02** folder in the **bundles** folder of your Launchpad 0.11.x project
+ - Copy and paste the **cxp-fe-training-02** folder in the **bundles** folder of your Launchpad 0.11.x project
  - If it is not already there, add the `bundles.dir` property as a new property in **portalserver/pom.xml**:
 
 ```xml
@@ -41,4 +41,4 @@ In this module, we dive into more advanced widget concepts. We will first look a
 </context-param>
 ```
 
-Then run `mvn package` at the root of portalserver!
+Then run `mvn package` at the root of the bundle (**bundles/cxp-fe-training-02**)!
