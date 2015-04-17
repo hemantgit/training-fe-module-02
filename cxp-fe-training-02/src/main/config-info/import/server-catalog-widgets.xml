@@ -19,35 +19,39 @@
             <property name="src">
                 <value type="string">$(contextRoot)/static/cxp-fe-training-02/widgets/pf2e1a-feed-reader/index.html</value>
             </property>
+            <property name="feedURL" label="RSS Feed URL" viewHint="text,user,deginModeOnly">
+                <value type="string">http://blog.backbase.com/feed/</value>
+            </property>
         </properties>
         <tags>
-            <tag type="section">training widgets</tag>
-            <tag type="regular">training</tag>
+            <tag type="section">FE Training</tag>
         </tags>
     </widget>
     <widget>
         <name>pf2e1b-feed-reader</name>
         <contextItemName>[BBHOST]</contextItemName>
         <properties>
-            <property name="TemplateName">
-                <value type="string">Standard_Widget</value>
-            </property>
-            <property name="title">
-                <value type="string">(PF2E1b) Feed Reader Widget</value>
+            <property name="src">
+                <value type="string">$(contextRoot)/static/cxp-fe-training-02/widgets/pf2e1b-feed-reader/index.html</value>
             </property>
             <property name="thumbnailUrl">
                 <value type="string">$(contextRoot)/static/dashboard/media/icons/icons-widgets_01-default.png</value>
             </property>
-            <property label="Widget Chrome" name="widgetChrome" viewHint="select-one,user,designModeOnly">
-                <value type="string">$(contextRoot)/static/backbase.com.2012.aurora/html/chromes/widget_default.html</value>
+            <property label="Title" name="title">
+                <value type="string">PF2E1B Feed Reader</value>
             </property>
-            <property name="src">
-                <value type="string">$(contextRoot)/static/cxp-fe-training-02/widgets/pf2e1b-feed-reader/index.html</value>
+            <property name="TemplateName">
+                <value type="string">Standard_Widget</value>
+            </property>
+            <property label="Widget Chrome" name="widgetChrome" viewHint="select-one,user,designModeOnly">
+                <value type="string">$(contextRoot)/static/backbase.com.2012.aurora/html/chromes/widget_none.html</value>
+            </property>
+            <property name="feedURL" label="RSS Feed URL" viewHint="text,user,deginModeOnly">
+                <value type="string">http://blog.backbase.com/feed/</value>
             </property>
         </properties>
         <tags>
-            <tag type="section">training widgets</tag>
-            <tag type="regular">training</tag>
+            <tag type="section">FE Training</tag>
         </tags>
     </widget>
     <widget>
@@ -71,8 +75,7 @@
             </property>
         </properties>
         <tags>
-            <tag type="section">training widgets</tag>
-            <tag type="regular">training</tag>
+            <tag type="section">FE Training</tag>
         </tags>
     </widget>
 </catalog>
