@@ -19,7 +19,7 @@
             <property name="src">
                 <value type="string">$(contextRoot)/static/cxp-fe-training-02/widgets/pf2e1a-feed-reader/index.html</value>
             </property>
-            <property name="feedURL" label="RSS Feed URL" viewHint="text,user,deginModeOnly">
+            <property name="url" label="Feed URL" viewHint="text,user,deginModeOnly">
                 <value type="string">http://blog.backbase.com/feed/</value>
             </property>
         </properties>
@@ -46,7 +46,7 @@
             <property label="Widget Chrome" name="widgetChrome" viewHint="select-one,user,designModeOnly">
                 <value type="string">$(contextRoot)/static/backbase.com.2012.aurora/html/chromes/widget_none.html</value>
             </property>
-            <property name="feedURL" label="RSS Feed URL" viewHint="text,user,deginModeOnly">
+            <property name="url" label="Feed URL" viewHint="text,user,deginModeOnly">
                 <value type="string">http://blog.backbase.com/feed/</value>
             </property>
         </properties>
