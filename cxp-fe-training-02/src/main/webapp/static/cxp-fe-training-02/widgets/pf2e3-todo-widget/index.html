@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:g="http://www.backbase.com/2008/gadget" xml:lang="en">
+<head>
+    <title>PF2E3 Todo Widget</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <g:preferences>
+        <g:preference name="limit" label="Todo's Limit" type="text" default="5" viewHint="none" />
+        <!-- own list of chromes -->
+        <g:preference name="widgetChrome" label="Widget Chrome" type="select-one" default="$(contextRoot)/static/cxp-fe-training-02/html/chromes/custom-chrome.html" viewHint="select-one,user,designModeOnly">
+            <g:enumeration value="$(contextRoot)/static/cxp-fe-training-02/html/chromes/custom-chrome.html" label="Custom Chrome" />
+            <g:enumeration value="$(contextRoot)/static/backbase.com.2012.aurora/html/chromes/widget_none.html" label="No Chrome" />
+            <g:enumeration value="$(contextRoot)/static/backbase.com.2012.aurora/html/chromes/widget_default.html" label="Default Chrome" />
+        </g:preference>
+    </g:preferences>
+
+    <link href="css/todo.css" rel="stylesheet" />
+
+</head>
+<body g:onload="requireWidget(__WIDGET__, 'js/pf2e3-todo-widget')" class="ct-pf2e3-todo-widget">
+    <h1>PF2E3 Todo Widget</h1>
+
+    <form name="add-todo" data-js="todo-form" class="form-inline">
+        <div class="form-group space">
+            <input type="text" name="task" class="form-control" placeholder="Enter the task's description here..." />
+        </div>
+        <div class="form-group">
+            <input type="submit" value="add task" class="btn btn-primary" />
+        </div>
+    </form>
+
+    <div data-js="todo-list" class="todo-list-wrapper"></div>
+
+    <script type="text/mustache" data-template="task">
+        <ul>
+            {{ #tasks }}
+            <li id="{{ idx }}" data-taskid="{{ idx }}" data-js="todo-row" class="todo-row {{ #done }}bt-todo-done{{ /done }}">
+                <span class="done-check space">
+                    {{ #done }}
+                    <input type="checkbox" data-js="update-task" data-taskid="{{ idx }}" checked="checked" />
+                    {{ /done }}
+                    {{ ^done }}
+                    <input type="checkbox" data-js="update-task" data-taskid="{{ idx }}" />
+                    {{ /done }}
+                </span>
+                <span class="description space">{{ description }}</span>
+                <span class="space"><a href="#" data-js="remove-task" data-taskid="{{ idx }}" class="remove-btn btn btn-danger"><span class="glyphicon glyphicon-trash"></span> remove</a></span>
+            </li>
+            {{ /tasks }}
+        </ul>
+    </script>
+
+</body>
+</html>
