@@ -15,7 +15,7 @@ In this module, we dive into more advanced widget concepts. We will first look a
 
  - Copy and paste the **cxp-fe-training-02** folder in the **statics/bundles** folder of your Launchpad 0.11.x project
 
- - Add the bundle resource base in **portalserver/pom.xml**, e.g.:
+ - Add the bundle resource base in **portal/pom.xml**, e.g.:
 
 ```xml
 <resourceBases>
@@ -25,10 +25,10 @@ In this module, we dive into more advanced widget concepts. We will first look a
 </resourceBases>
 ```
 
- - Create a folder called "services" at the root of your project, and paste the "feed-service-module" folder in there
+ - Create a folder called **services** at the root of your project, and paste the **feed-service-module** folder in there
 
- - run `mvn clean install` in the services/feed-service-module folder
- - in the pom.xml file of portal, add the following dependencY:
+ - run `mvn clean install` in the **services/feed-service-module** folder
+ - in **portal/pom.xml**, add the following dependency:
 
 ```xml
 <dependency>
