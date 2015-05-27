@@ -13,32 +13,29 @@ In this module, we dive into more advanced widget concepts. We will first look a
 
 ### Installation & Configuration
 
- - Copy and paste the **cxp-fe-training-02** folder in the **bundles** folder of your Launchpad 0.11.x project
- - If it is not already there, add the `bundles.dir` property as a new property in **portalserver/pom.xml**:
-
-```xml
-<bundles.dir>${project.parent.basedir}/bundles</bundles.dir>
-```
+ - Copy and paste the **cxp-fe-training-02** folder in the **statics/bundles** folder of your Launchpad 0.11.x project
 
  - Add the bundle resource base in **portalserver/pom.xml**, e.g.:
 
 ```xml
 <resourceBases>
-    <resourceBase>${bundles.dir}/cxp-fe-training-02/src/main/webapp</resourceBase>
+    <resourceBase>${bundles.dir}/cxp-fe-training-02/src/main/webapp</resourceBase> // add this line
     <resourceBase>${project.basedir}/src/main/webapp</resourceBase>
     <resourceBase>${work.dir}</resourceBase>
 </resourceBases>
-<extraClasspath>${bundles.dir}/cxp-fe-training-02/target/classes;${basedir}/target/classes/;${basedir}/target/portalserver/WEB-INF/classes</extraClasspath>
 ```
 
- - Add **exercises-ptc-config.xml** to the list of PTC configuration files in **portalserver/src/main/webapp/WEB-INF/web.xml**, e.g.:
+ - Create a folder called "services" at the root of your project, and paste the "feed-service-module" folder in there
+
+ - run `mvn clean install` in the services/feed-service-module folder
+ - in the pom.xml file of portal, add the following dependencY:
 
 ```xml
-<!-- PTC configuration files list. -->
-<context-param>
-    <param-name>com.backbase.portal.ptc.web.CONFIG_FILE</param-name>
-    <param-value>classpath:/ptc-config.xml,classpath:/ptc-launchpad.xml,classpath:/exercises-ptc-config.xml</param-value>
-</context-param>
+<dependency>
+    <groupId>com.backbase.practices</groupId>
+    <artifactId>feed-service-module</artifactId>
+    <version>1.0-SNAPSHOT</version>
+</dependency>
 ```
 
-Then run `mvn package` at the root of the bundle (**bundles/cxp-fe-training-02**)!
+Then restart portal.

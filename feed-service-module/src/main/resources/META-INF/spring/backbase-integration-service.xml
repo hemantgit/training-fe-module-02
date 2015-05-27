@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans:beans xmlns="http://camel.apache.org/schema/spring"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                           http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+    <routeContext id="com.backbase.portal.integration.service.feed.exchangeservices" >
+
+        <route id="com.backbase.portal.integration.service.feed.exchangeservices.json">
+            <from uri="restlet:/feed/json?restletMethods=GET&amp;restletBinding=#queryStringToHeadersRestletBinding"/>
+            <log message="Headers before cleanup: ${headers}" loggingLevel="DEBUG"/>
+            <!--<removeHeaders pattern="CamelHttp*" excludePattern="CamelHttpMethod"/>-->
+            <!--<removeHeaders pattern="If-*"/>-->
+            <removeHeaders pattern="*" excludePattern="url" />
+            <log message="Headers after cleanup: ${headers}" loggingLevel="DEBUG"/>
+            <recipientList>
+                <simple>${header.url}</simple>
+            </recipientList>
+            <removeHeaders pattern="Last-Modified"/>
+            <marshal ref="xmljson" />
+        </route>
+
+        <route id="com.backbase.portal.integration.service.feed.exchangeservices.html">
+            <from uri="servlet:///feed/html?matchOnUriPrefix=true&amp;servletName=Integration Servlet"/>
+            <log message="Headers before cleanup: ${headers}" loggingLevel="DEBUG"/>
+            <!--<removeHeaders pattern="CamelHttp*" excludePattern="CamelHttpMethod"/>-->
+            <!--<removeHeaders pattern="If-*"/>-->
+            <removeHeaders pattern="*" excludePattern="url" />
+            <log message="Headers after cleanup: ${headers}" loggingLevel="DEBUG"/>
+            <recipientList>
+                <simple>${header.url}</simple>
+            </recipientList>
+            <to uri="xslt:xslt/rss/rss2xhtml.xsl"/>
+        </route>
+
+    </routeContext>
+
+</beans:beans>
