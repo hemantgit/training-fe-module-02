@@ -13,7 +13,7 @@ In this module, we dive into more advanced widget concepts. We will first look a
 
 ### Installation & Configuration
 
- - Copy and paste the **cxp-fe-training-02** folder in the **statics/bundles** folder of your Launchpad 0.11.x project
+ - Copy and paste the **cxp-fe-training-02** folder in the **statics/bundles** folder of your Launchpad 0.12.x project
 
  - Add the bundle resource base in **portal/pom.xml**, e.g.:
 
