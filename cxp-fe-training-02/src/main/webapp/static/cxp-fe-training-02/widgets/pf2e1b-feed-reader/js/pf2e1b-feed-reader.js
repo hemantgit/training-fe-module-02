@@ -3,8 +3,8 @@ define(['jquery'], function($) {
 
     var self = null,
         SELECTORS = {
-            'WRAPPER': '[data-js="feed-wrapper"]',
-            'TEMPLATE': '[data-template="articles"]'
+            'WRAPPER': '[data-js="bt-pf2e1b-feed-wrapper"]',
+            'TEMPLATE': '[data-template="bt-pf2e1b-articles"]'
         };
 
     /**
@@ -22,7 +22,6 @@ define(['jquery'], function($) {
 
         self.servicePath = b$.portal.portalServer.serverURL + 'services/rest/feed/json';
         self.feedURL = null;
-        self.getFeedURL();
 
         return self;
     }
@@ -32,6 +31,7 @@ define(['jquery'], function($) {
     * @return undefined
     */
     FeedReader.prototype.init = function() {
+        self.getFeedURL();
         self.getArticles();
 
         // handles preference changes

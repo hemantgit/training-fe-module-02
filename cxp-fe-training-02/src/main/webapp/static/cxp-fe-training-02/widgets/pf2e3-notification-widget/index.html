@@ -16,12 +16,12 @@
     </g:preferences>
 
 </head>
-<body g:onload="requireWidget(__WIDGET__, 'js/pf2e3-notification-widget')" class="ct-pf2e3-notification-widget">
+<body g:onload="requireWidget(__WIDGET__, 'js/pf2e3-notification-widget')" class="bt-pf2e3-notification-widget">
     <h1>PF2E3 Notification Widget</h1>
 
-    <div data-js="message-wrapper"></div>
+    <div data-js="bt-pf2e3-message-wrapper"></div>
 
-    <script type="text/mustache" data-template="message">
+    <script type="text/mustache" data-template="bt-pf2e3-message">
         <p>A todo was just {{type}}. Total: {{total}} out of {{limit}} todos.</p>
     </script>
 </body>
