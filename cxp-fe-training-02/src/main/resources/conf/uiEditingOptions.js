@@ -16,16 +16,9 @@ bd.uiEditingOptions = {
     //LaunchPad widget chorme preference config.
     widgetPreferenceSelections: {
         widgetChrome: [
-            {label: "Custom Chrome",                    value: "$(contextRoot)/static/cxp-fe-training-02/html/chromes/custom-chrome.html"},
-            {label: "Aurora No Chrome",                 value: "$(contextRoot)/static/backbase.com.2012.aurora/html/chromes/widget_none.html"},
-            {label: "Aurora Default Chrome",            value: "$(contextRoot)/static/backbase.com.2012.aurora/html/chromes/widget_default.html"},
-            {label: "Blank Chrome",                     value: "$(contextRoot)/static/launchpad/chromes/blank/chrome-blank.html"},
-            {label: "Default Chrome",                   value: "$(contextRoot)/static/launchpad/chromes/default/chrome-default.html"},
-            {label: "Launcher Slide Chrome (Closed)",   value: "$(contextRoot)/static/launchpad/chromes/launcher/chrome-slide.html"},
-            {label: "Launcher Slide Chrome (Open)",     value: "$(contextRoot)/static/launchpad/chromes/launcher/chrome-slide-open.html"},
-            {label: "Launcher Tab Chrome",              value: "$(contextRoot)/static/launchpad/chromes/launcher/chrome-tab.html"},
-            {label: "Launcher Tab Chrome (Hidden)",     value: "$(contextRoot)/static/launchpad/chromes/launcher/chrome-tab-hidden.html"},
-            {label: "Springboard Chrome",               value: "$(contextRoot)/static/launchpad/chromes/springboard/chrome-springboard.html"}
+            {label: "Custom Chrome", value: "$(contextRoot)/static/cxp-fe-training-02/html/chromes/custom-chrome.html"},
+            {label: "No Chrome", value: "$(contextRoot)/static/backbase.com.2012.aurora/html/chromes/widget_none.html"},
+            {label: "Default Chrome", value: "$(contextRoot)/static/backbase.com.2012.aurora/html/chromes/widget_default.html"}
         ]
     },
 

@@ -20,7 +20,7 @@ define(['jquery'], function($) {
 
         self.template = self.$widget.find(SELECTORS.TEMPLATE).text();
 
-        self.proxyPath = b$.portal.portalServer.serverURL + 'proxy?pipe=jsonPipe';
+        self.servicePath = b$.portal.portalServer.serverURL + 'services/rest/feed/json';
         self.feedURL = null;
         self.getFeedURL();
 
@@ -58,7 +58,7 @@ define(['jquery'], function($) {
     FeedReader.prototype.getArticles = function() {
         $.ajax({
             dataType: 'json',
-            url: self.proxyPath,
+            url: self.servicePath,
             data: {
                 url: self.feedURL
             }

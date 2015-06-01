@@ -13,8 +13,8 @@
 
 <body class="bt-feed-reader" g:onload="requireWidget(__WIDGET__, 'js/pf2e1a-feed-reader');">
 
-    <g:include src="${url}" proxy="true">
-        <g:http-proxy-param name="pipe" value="rssPipe" />
+    <g:include src="$(contextRoot)/services/feed/html">
+        <g:http-param name="url" value="${url}" />
     </g:include>
 
 </body>

@@ -1,10 +1,10 @@
 define([], function() {
     'use strict';
 
-	var self = null;
+    var self = null;
 
     function FeedReader(widget) {
-    	var self = this;
+        self = this;
 
         self.widget = widget;
 
