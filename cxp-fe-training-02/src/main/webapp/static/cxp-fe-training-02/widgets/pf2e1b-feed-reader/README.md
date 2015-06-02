@@ -25,4 +25,3 @@ In this exercise, you will learn how to retrieve data from Camel routes using Ja
 
  - [Widget Development Methodology](https://github.com/Backbase/methodology-widget-development)
  - [Mustache](https://mustache.github.io/mustache.5.html)
- - [Predefined Pipes](https://my.backbase.com/resources/documentation/portal/5.5.1.0/devd_cuma_pipe_pred.html)
