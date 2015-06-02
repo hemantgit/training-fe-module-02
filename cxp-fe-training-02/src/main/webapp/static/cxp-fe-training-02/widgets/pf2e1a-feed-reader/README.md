@@ -19,8 +19,8 @@ In this exercise, you will learn how to use `g:include` to retrieve and transfor
 
 #### Additional resources
 
- - [Camel configuration](feed-service-module/src/main/resources/META-INF/spring/backbase-integration-service.xml#L24-L35)
- - [RSS xsl](feed-service-module/src/main/resources/xslt/rss/rss2xhtml.xsl)
+ - [Camel configuration](../../../../../../../../feed-service-module/src/main/resources/META-INF/spring/backbase-integration-service.xml#L24-L35)
+ - [RSS xsl](../../../../../../../../feed-service-module/src/main/resources/xslt/rss/rss2xhtml.xsl)
  - [server-catalog-widgets.xml](../../../../../config-info/import/server-catalog-widgets.xml#L3-L27)
 
 #### References
