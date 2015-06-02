@@ -9,17 +9,16 @@ _note: All exercises use the [standard portal set-up for backbase trainings](htt
 
 #### Description
 
-In this exercise, you will learn how to retrieve data from proxy pipes using JavaScript.
+In this exercise, you will learn how to retrieve data from Camel routes using JavaScript.
 
 #### Steps
 
- - Do an ajax call to an RSS feed and use provided **jsonPipe** to transform the response to JSON
+ - Do an ajax call to an RSS feed and use provided **Camel route** to transform the response to JSON
  - Create and use a Mustache template to render it
 
 #### Additional resources
 
- - [PTC configuration](../../../../../resources/exercises-ptc-config.xml)
- - [Xml2JSON transformer](../../../../../java/com/backbase/exercises/ptc/transformers/Xml2JSONResponseTransformer.java)
+ - [Camel configuration](../../../../../../../../feed-service-module/src/main/resources/META-INF/spring/backbase-integration-service.xml#L10-L22)
  - [server-catalog-widgets.xml](../../../../../config-info/import/server-catalog-widgets.xml#L28-L52)
 
 #### References
