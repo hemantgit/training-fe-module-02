@@ -31,7 +31,9 @@ define(['jquery'], function($) {
     * @return undefined
     */
     FeedReader.prototype.init = function() {
+        // get the new url
         self.getFeedURL();
+        // refresh the articles
         self.getArticles();
 
         // handles preference changes
