@@ -15,12 +15,12 @@ In this exercise, you will learn how to use `g:include` to retrieve and transfor
 
  - Create a new widget named **Feed Reader**, based on the Widget Development Methodology
  - Let the widget include the content of an RSS feed using **g:include**
- - Use provided **rssPipe** to transform xml to html
+ - Use provided **Camel route** to transform xml to html
 
 #### Additional resources
 
- - [PTC configuration](../../../../../resources/exercises-ptc-config.xml)
- - [RSS xsl](../../../../WEB-INF/xslt/rss/rss2xhtml.xsl)
+ - [Camel configuration](feed-service-module/src/main/resources/META-INF/spring/backbase-integration-service.xml#L24-L35)
+ - [RSS xsl](feed-service-module/src/main/resources/xslt/rss/rss2xhtml.xsl)
  - [server-catalog-widgets.xml](../../../../../config-info/import/server-catalog-widgets.xml#L3-L27)
 
 #### References
