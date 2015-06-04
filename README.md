@@ -25,7 +25,7 @@ In this module, we dive into more advanced widget concepts. We will first look a
 </resourceBases>
 ```
 
- - Create a folder called **services** at the root of your project, and paste the **feed-service-module** folder in there
+ - If there is no folder called **services** at the root of your project, create it and paste the **feed-service-module** folder in there
 
  - run `mvn clean install` in the **services/feed-service-module** folder
  - in **portal/pom.xml**, add the following dependency:
