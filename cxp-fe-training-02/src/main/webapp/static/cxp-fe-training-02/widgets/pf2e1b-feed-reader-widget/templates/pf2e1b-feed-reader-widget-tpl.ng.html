@@ -1,0 +1,17 @@
+<!-- Add NG Template here-->
+
+<div class="container">
+    <!-- loading message -->
+    <div ng-if="!mainCtrl.feedData">Feed not loaded yet!</div>
+    <!-- feed renderer -->
+    <div ng-if="mainCtrl.feedData.channel">
+        <pre class="hidden">{{mainCtrl.feedData.channel.item}}</pre>
+        <h3>{{mainCtrl.feedData.channel.title}}</h3>
+        <p>{{mainCtrl.feedData.channel.description}}</p>
+
+        <div ng-repeat="article in mainCtrl.feedData.channel.item track by $index">
+            <h4>{{ article.title }}</h4>
+            <p>{{ article.description }}</p>
+        </div>
+    </div>
+</div>
