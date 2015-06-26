@@ -20,7 +20,8 @@ define( function (require, exports, module) {
 
     var deps = [
         core.name,
-        ui.name
+        ui.name,
+        'ngSanitize'
     ];
 
     // @ngInject

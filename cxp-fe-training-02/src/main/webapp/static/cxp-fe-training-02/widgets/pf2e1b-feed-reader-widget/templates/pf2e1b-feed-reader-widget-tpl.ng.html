@@ -11,7 +11,9 @@
 
         <div ng-repeat="article in mainCtrl.feedData.channel.item track by $index">
             <h4>{{ article.title }}</h4>
-            <p>{{ article.description }}</p>
+            <!-- use "ng-bind-html" directive to render raw html content -->
+            <p ng-bind-html="article.description"></p>
+            <p>Published <em>{{ article.pubDate }}</em> by <em>{{ article['dc:creator']['#text'] }}</em></p>
         </div>
     </div>
 </div>

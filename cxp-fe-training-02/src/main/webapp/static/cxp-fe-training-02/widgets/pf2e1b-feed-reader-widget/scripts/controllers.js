@@ -7,7 +7,7 @@ define(function (require, exports) {
     'use strict';
 
     // @ngInject
-    exports.MainCtrl = function($http, lpWidget) {
+    exports.MainCtrl = function($http, $sce, lpWidget) {
         var ctrl = this; //self this controller
 
         ctrl.servicePath = b$.portal.portalServer.serverURL + 'services/rest/feed/json';
