@@ -1,66 +1,27 @@
-# pf2e1b-feed-reader-widget
+# Backbase Training Exercise
 
-A fine launchpad 12 widget.
+## Portal Frontend - Module 2
 
-## Information
+### Exercise 1, part b
 
-| name                  | version           | bundle           |
-| ----------------------|:-----------------:| ----------------:|
-| pf2e1b-feed-reader-widget      |0.1.0| cxp-fe-training-02       |
+_note: This exercise is 2 of 4 in a series of exercises that follow on from each other and should not be used independently_
+_note: All exercises use the [standard portal set-up for backbase trainings](https://my.backbase.com/resources/how-to-guides/getting-your-first-launchpad-based-portal-set-up/)_
 
-## Widget Checklist
+#### Description
 
- - [ ] Fault Tolerance: Widget gracefully behaves/fails with loss of connection.
- - [ ] Fault Tolerance: Widget gracefully fails if session is lost.
- - [ ] Fault Tolerance: Widget gracefully and productively handles error responses.
- - [ ] Extensibility: Look and feel is manageable via theming.
- - [ ] Security: Secure from XSS.
- - [ ] Security: Secure from CSRF.
- - [ ] Accessibility: Support for color blind users.
- - [ ] Accessibility: Support for users with motor-inability (keyboard navigation).
- - [ ] Accessibility: Support for users who are blind (screen reader).
- - [ ] i18n: All UI messages are externalized and localizable.
- - [ ] i18n: All dates and numbers are localized.
- - [ ] i18n: Works RTL.
- - [ ] Mobile: SDK compatible.
- - [ ] Mobile: Widget is responsive to mobile & tablet.
- - [ ] Documentation: Reference files linked from README.
- - [ ] Documentation: Dependencies (bower & UI components used) listed in README.
- - [ ] Documentation: Modules/classes JSDoc.
- - [ ] Documentation: Widget feature list documented.
- - [ ] Testing: Distribution folder
+In this exercise, you will learn how to retrieve data from Camel routes using JavaScript.
 
-## Dependencies
+#### Steps
 
-* [base][base-url]
-* [core][core-url]
-* [ui][ui-url]
+ - Do an ajax call to an RSS feed and use provided **Camel route** to transform the response to JSON
+ - Create and use an Angular template to render it
 
-## Dev Dependencies
+#### Additional resources
 
-* [angular-mocks ~1.2.28][angular-mocks-url]
-* [config][config-url]
+ - [Camel configuration](../../../../../../../../feed-service-module/src/main/resources/META-INF/spring/backbase-integration-service.xml#L10-L22)
+ - [catalog-pf2e1b-feed-reader-widget.xml](catalog-pf2e1b-feed-reader-widget.xml)
 
-## Preferences
-- List of widget preferences
+#### References
 
-## Events
-- List of event the widget publishes/subscribes
-
-## Custom Components
-- list of widget custom components (if any)
-
-## Requirements
-
-### User Requirements
-
-### Business Requirements
-
-## References
-
-[base-url]:http://stash.backbase.com:7990/projects/lpm/repos/foundation-base/browse/
-[core-url]: http://stash.backbase.com:7990/projects/lpm/repos/foundation-core/browse/
-[ui-url]: http://stash.backbase.com:7990/projects/lpm/repos/ui/browse/
-[config-url]: https://stash.backbase.com/projects/LP/repos/config/browse
-[api-url]:http://stash.backbase.com:7990/projects/LPM/repos/api/browse/
-[angular-mocks-url]:https://github.com/angular/bower-angular-mocks
+ - [Widget Development Methodology](https://github.com/Backbase/methodology-widget-development)
+ - [ngSanitize](https://docs.angularjs.org/api/ngSanitize)
