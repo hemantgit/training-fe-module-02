@@ -6,8 +6,8 @@ In this module, we dive into more advanced widget concepts. We will first look a
 
 ### Contents
 
- - **pf2e1a**: How to consume from a Camel route and g:include the response in a widget ([solution](cxp-fe-training-02/src/main/webapp/static/cxp-fe-training-02/widgets/pf2e1a-feed-reader))
- - **pf2e1b**: How to consume from a Camel route through an ajax call ([solution](cxp-fe-training-02/src/main/webapp/static/cxp-fe-training-02/widgets/pf2e1b-feed-reader))
+ - **pf2e1a**: How to consume from a Camel route and g:include the response in a widget ([solution](cxp-fe-training-02/src/main/webapp/static/cxp-fe-training-02/widgets/pf2e1a-feed-reader-widget))
+ - **pf2e1b**: How to consume from a Camel route through an ajax call ([solution](cxp-fe-training-02/src/main/webapp/static/cxp-fe-training-02/widgets/pf2e1b-feed-reader-widget))
  - **pf2e2**: How to create ICE templates ([solution](cxp-fe-training-02/src/main/webapp/static/cxp-fe-training-02/widgets/pf2e2-content))
  - **pf2e3**: How to create widget chromes ([solution](cxp-fe-training-02/src/main/webapp/static/cxp-fe-training-02/html/chromes))
 
