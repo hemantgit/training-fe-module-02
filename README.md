@@ -17,25 +17,25 @@ In this module, we dive into more advanced widget concepts. We will first look a
 
  - Add the bundle resource base in **portal/pom.xml**, e.g.:
 
-```xml
-<resourceBases>
-    <resourceBase>${statics.dir}/bundles/cxp-fe-training-02/src/main/webapp</resourceBase> // add this line
-    <resourceBase>${project.basedir}/src/main/webapp</resourceBase>
-    <resourceBase>${work.dir}</resourceBase>
-</resourceBases>
-```
+   ```xml
+   <resourceBases>
+       <resourceBase>${statics.dir}/bundles/cxp-fe-training-02/src/main/webapp</resourceBase> // add this line
+       <resourceBase>${project.basedir}/src/main/webapp</resourceBase>
+       <resourceBase>${work.dir}</resourceBase>
+   </resourceBases>
+   ```
 
  - If there is no folder called **services** at the root of your project, create it and paste the **feed-service-module** folder in there
 
  - run `mvn clean install` in the **services/feed-service-module** folder
  - in **portal/pom.xml**, add the following dependency:
 
-```xml
-<dependency>
-    <groupId>com.backbase.training</groupId>
-    <artifactId>feed-service-module</artifactId>
-    <version>1.0-SNAPSHOT</version>
-</dependency>
-```
+   ```xml
+   <dependency>
+       <groupId>com.backbase.training</groupId>
+       <artifactId>feed-service-module</artifactId>
+       <version>1.0-SNAPSHOT</version>
+   </dependency>
+   ```
 
 Then restart portal.
