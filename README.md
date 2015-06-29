@@ -32,7 +32,7 @@ In this module, we dive into more advanced widget concepts. We will first look a
 
 ```xml
 <dependency>
-    <groupId>com.backbase.practices</groupId>
+    <groupId>com.backbase.training</groupId>
     <artifactId>feed-service-module</artifactId>
     <version>1.0-SNAPSHOT</version>
 </dependency>
