@@ -31,5 +31,6 @@ define( function (require, exports, module) {
 
     module.exports = base.createModule(module.name, deps)
         .controller( require('./controllers') )
+        .service( require('./services') )
         .run( run );
 });

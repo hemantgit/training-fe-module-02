@@ -7,7 +7,10 @@ define(function (require, exports) {
     'use strict';
 
     // @ngInject
-    exports.MainCtrl = function() {
-        // var ctrl = this; //self this controller
+    exports.MainCtrl = function(lpWidget) {
+        // listen for changes on the url pref, and automatically reload the html
+        lpWidget.addEventListener('preferencesSaved', function(e) {
+            lpWidget.refreshHTML();
+        });
     };
 });
