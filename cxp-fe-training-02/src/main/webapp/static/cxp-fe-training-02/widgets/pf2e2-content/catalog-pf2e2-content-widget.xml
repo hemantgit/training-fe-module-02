@@ -1,25 +1,27 @@
-<widget>
-    <name>pf2e2-content-widget</name>
-    <contextItemName>[BBHOST]</contextItemName>
-    <properties>
-        <property name="TemplateName">
-            <value type="string">Standard_Widget</value>
-        </property>
-        <property name="title">
-            <value type="string">pf2e2-content-widget</value>
-        </property>
-        <property name="thumbnailUrl">
-            <value type="string">$(contextRoot)/static/dashboard/media/icons/icons-widgets_01-default.png</value>
-        </property>
-        <property label="Widget Chrome" name="widgetChrome" viewHint="select-one,user,designModeOnly">
-            <value type="string">$(contextRoot)/static/backbase.com.2012.aurora/html/chromes/widget_default.html</value>
-        </property>
-        <property name="src">
-            <value type="string">$(contextRoot)/static/cxp-fe-training-02/widgets/pf2e2-content/index.html</value>
-        </property>
-    </properties>
-    <tags>
-        <tag type="section">FE Training Widgets</tag>
-        <tag type="regular">training</tag>
-    </tags>
-</widget>
+<catalog>
+    <widget>
+        <name>pf2e2-content-widget</name>
+        <contextItemName>[BBHOST]</contextItemName>
+        <properties>
+            <property name="TemplateName">
+                <value type="string">Standard_Widget</value>
+            </property>
+            <property name="title">
+                <value type="string">pf2e2-content-widget</value>
+            </property>
+            <property name="thumbnailUrl">
+                <value type="string">$(contextRoot)/static/dashboard/media/icons/icons-widgets_01-default.png</value>
+            </property>
+            <property label="Widget Chrome" name="widgetChrome" viewHint="select-one,user,designModeOnly">
+                <value type="string">$(contextRoot)/static/backbase.com.2012.aurora/html/chromes/widget_default.html</value>
+            </property>
+            <property name="src">
+                <value type="string">$(contextRoot)/static/cxp-fe-training-02/widgets/pf2e2-content/index.html</value>
+            </property>
+        </properties>
+        <tags>
+            <tag type="section">FE Training Widgets</tag>
+            <tag type="regular">training</tag>
+        </tags>
+    </widget>
+</catalog>
