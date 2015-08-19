@@ -6,9 +6,9 @@ In this module, we dive into more advanced widget concepts. We will first look a
 
 ### Contents
 
- - **pf2e1a**: How to consume from a Camel route and g:include the response in a widget ([solution](solutions/pf2e1a-feed-reader-widget))
+ - **pf2e1a**: How to consume from a Camel route and g:include the response in a widget ([solution]())
  - **pf2e1b**: How to consume from a Camel route through an ajax call ([solution](solutions/pf2e1b-feed-reader-widget))
- - **pf2e2**: How to create ICE templates ([solution](solutions/pf2e2-content))
+ - **pf2e2**: How to create ICE templates ([solution](solutions/pf2e2-content-widget))
  - **pf2e3**: How to create widget chromes ([solution]())
 
 ### Apache Camel Service Installation
