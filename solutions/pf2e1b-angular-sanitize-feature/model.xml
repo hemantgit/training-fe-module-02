@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalog totalSize="1">
+    <feature>
+        <name>angular-sanitize</name>
+        <tags/>
+        <lockState>UNLOCKED</lockState>
+        <properties>
+            <property label="Title" name="title" viewHint="admin,designModeOnly">
+                <value type="string">Angular Sanitize</value>
+            </property>
+            <property label="Version" name="version" viewHint="designModeOnly">
+                <value type="string">1.4.45</value>
+            </property>
+        </properties>
+    </feature>
+</catalog>

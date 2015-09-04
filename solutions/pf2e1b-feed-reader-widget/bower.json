@@ -22,8 +22,7 @@
   "dependencies": {
     "base": "*",
     "core": "*",
-    "ui": "*",
-    "angular-sanitize": "~1.4.1"
+    "ui": "*"
   },
   "devDependencies": {
     "config": "master",
