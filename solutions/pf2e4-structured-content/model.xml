@@ -1,0 +1,29 @@
+<catalog>
+    <widget>
+        <name>MyCXPStructuredContentWidget</name>
+        <contextItemName>[BBHOST]</contextItemName>
+        <extendedItemName>CXPStructuredContentWidget</extendedItemName>
+        <properties>
+            <property label="Title" name="title" viewHint="text-input,user">
+                <value type="string">My Structured Content Widget</value>
+            </property>
+            <property name="thumbnailUrl">
+                <value type="string">$(itemRoot)/icon.png</value>
+            </property>
+            <property name="templateList" label="Templates">
+                <value type="string">Plain text,$(itemRoot)/templates/plain.html,Backbase,$(itemRoot)/templates/backbase.html,Blog entry,$(itemRoot)/templates/blog-entry.html,Credit Card Banner,$(itemRoot)/templates/CreditCardBanner.html,Credit Card Full Description,$(itemRoot)/templates/CreditCardFullDescription.html</value>
+            </property>
+            <property name="templateUrl" label="Template" viewHint="select-one,manager">
+                <value type="string">$(itemRoot)/templates/plain.html</value>
+            </property>
+        </properties>
+        <tags>
+            <tag>backbase</tag>
+            <tag>cms</tag>
+            <tag>content</tag>
+            <tag>template</tag>
+            <tag>universal</tag>
+            <tag type="section">Content</tag>
+        </tags>
+    </widget>
+</catalog>

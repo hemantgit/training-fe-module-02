@@ -1,68 +1,28 @@
-# packaged angular-sanitize
+# Backbase Training Exercise
 
-This repo is for distribution on `npm` and `bower`. The source for this module is in the
-[main AngularJS repo](https://github.com/angular/angular.js/tree/master/src/ngSanitize).
-Please file issues and pull requests against that repo.
+## Portal Frontend - Module 2
 
-## Install
+### Exercise 1, part b
 
-You can install this package either with `npm` or with `bower`.
+_note: This exercise is 2 of 5 in a series of exercises that follow on from each other and should not be used independently_
+_note: All exercises use the [standard portal set-up for backbase trainings](https://my.backbase.com/resources/how-to-guides/getting-your-first-launchpad-based-portal-set-up/)_
 
-### npm
+#### Description
 
-```shell
-npm install angular-sanitize
-```
+In this exercise, you will learn how to retrieve data from Camel routes using JavaScript.
 
-Then add `ngSanitize` as a dependency for your app:
+#### Steps
 
-```javascript
-angular.module('myApp', [require('angular-sanitize')]);
-```
+ - Do an ajax call to an RSS feed and use provided **Camel route** to transform the response to JSON
+ - Create and use an Angular template to render it
 
-### bower
+#### Additional resources
 
-```shell
-bower install angular-sanitize
-```
+ - [Camel configuration](../../../../../../../../feed-service-module/src/main/resources/META-INF/spring/backbase-integration-service.xml#L10-L22)
+ - [catalog-pf2e1b-feed-reader-widget.xml](catalog-pf2e1b-feed-reader-widget.xml)
+ - [Feed Reader Widget](../pf2e1b-feed-reader-widget)
 
-Add a `<script>` to your `index.html`:
+#### References
 
-```html
-<script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
-```
-
-Then add `ngSanitize` as a dependency for your app:
-
-```javascript
-angular.module('myApp', ['ngSanitize']);
-```
-
-## Documentation
-
-Documentation is available on the
-[AngularJS docs site](http://docs.angularjs.org/api/ngSanitize).
-
-## License
-
-The MIT License
-
-Copyright (c) 2010-2015 Google, Inc. http://angularjs.org
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+ - [Widget Development Methodology](https://github.com/Backbase/methodology-widget-development)
+ - [ngSanitize](https://docs.angularjs.org/api/ngSanitize)
