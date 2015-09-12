@@ -3,7 +3,7 @@
         <name>pf2e2-content-widget</name>
         <extendedItemName>CXPContentWidget</extendedItemName>
         <properties>
-            <property label="Title" name="title" viewHint="text-input,user">
+            <property label="Title" name="title" viewHint="text-input,manager">
                 <value type="string">My Content Widget</value>
             </property>
             <property name="templateList" label="Templates">

@@ -4,7 +4,7 @@
         <contextItemName>[BBHOST]</contextItemName>
         <extendedItemName>CXPStructuredContentWidget</extendedItemName>
         <properties>
-            <property label="Title" name="title" viewHint="text-input,user">
+            <property label="Title" name="title" viewHint="text-input,manager">
                 <value type="string">My Structured Content Widget</value>
             </property>
             <property name="thumbnailUrl">
