@@ -6,8 +6,8 @@ An Apache Camel service allowing you to retrieve and transform XML data from a r
 
 ### Installation
 
- - If there is no folder called **services** at the root of your project, create it and paste the **feed-service-module** folder in there
- - Run `mvn clean install` in the **services/feed-service-module** folder
+ - If there is no folder called **services** at the root of your project, create it and paste the **feed-service-module** folder in there.
+ - Run `mvn clean install` in the **services/feed-service-module** folder.
  - In **webapps/portalserver/pom.xml**, add the following dependency (**hint**: search for the line that says _"Include here all Apache Camel services from services module that need to be deployed in final WAR"_):
 
    ```xml
@@ -18,4 +18,4 @@ An Apache Camel service allowing you to retrieve and transform XML data from a r
    </dependency>
    ```
 
- - Restart the Portal module
+ - Restart the Portal module.
