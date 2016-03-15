@@ -13,29 +13,14 @@ In this exercise, you will learn how to extend the default ICE widget by creatin
 
 #### Steps
 
- - Create a new ICE widget by extending the default Backbase ICE widget, following [this documentation](https://my.backbase.com/resources/documentation/portal/5.6.0/icewidgets_customize.html)
  - Create a template named **media-object.html**, based on the [Twitter Bootstrap Media Object](http://getbootstrap.com/components/#media)
- - Add this template in the ICE widget from the previous step and update the **model.xml** to make this new template the default one
- - Upload your custom Content Widget to the Portal Catalog and test that it works as expected
-
-#### Additional resources
-
- - [Custom templates](../../templates/content/)
- - [Template styles](../../css/templates.css)
- - [server-catalog-widgets.xml](../../../../../config-info/import/server-catalog-widgets.xml#L53-L77)
+ - Upload your custom content template to the Enterprise Catalog
+ - Once the template is added to the Enterprise Catalog, it can be consumed by a Content Widget in one of the following two ways:
+  - use the content widget provided with the exercise (link to readme from the widget) (Should be zipped and dragged to the portal catalog)
+  - In portal catalog, access the content widget settings and switch to the properties tab. Add the **,Media Object,$(contextRoot)/static/features/[BBHOST]/media-object-content-template/media-object-template/media-object.html** at the end of the templateList property value.
 
 #### References
 
- - [Create an ICE Widget](https://my.backbase.com/resources/documentation/portal/5.5.1.0/devd_tuto_ice_.html)
- - [Add a Content Template](https://my.backbase.com/resources/documentation/portal/5.5.1.0/devd_mang_icet_reftemp.html)
+ - [Create an ICE Widget](https://my.backbase.com/docs/product-documentation/documentation/portal/5.6.1/icewidgets_customize.html)
  - [Media Object](http://getbootstrap.com/components/#media)
  - [Twitter Bootstrap](http://getbootstrap.com/)
-
-
-
-
-2 ways to do it
-
-- use the content widget provided with the exercise (link to readme from the widget) (Should be zipped and dragged to the portal catalog)
-
-- In portal catalog, access the content widget settings and switch to the properties tab. Add the **,Media Object,$(contextRoot)/static/features/[BBHOST]/media-object-content-template/media-object-template/media-object.html** at the end of the templateList property value.
