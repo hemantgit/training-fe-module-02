@@ -1,6 +1,6 @@
 # Backbase Training Exercises
 
-## Portal Frontend - Module 2: Widget Extras
+## Portal Frontend - Module 2: Feed Service
 
 An Apache Camel service allowing you to retrieve and transform XML data from a remote RSS feed.
 
