@@ -13,7 +13,7 @@ A feature that makes the Angular Sanitize library available to widgets.
 
 #### Related resources
 
- - [Feed Reader Widget](../pf2e1b-feed-reader-widget)
+ - [Feed Reader Widget](../pf2e1b-widget-feed-reader)
 
 #### References
 
