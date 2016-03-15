@@ -23,10 +23,9 @@ In this exercise, you will learn how to:
 ) to learn how to create custom templates for the Structured Content Widget
 
 
-#### Additional resources
+#### Related resources
 
  - [Structured Content Resources](../../structured-content-materials)
- - [model.xml](./model.xml)
 
 #### References
 
