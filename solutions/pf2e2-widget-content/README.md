@@ -9,24 +9,15 @@ _note: All exercises use the [standard portal set-up for backbase trainings](htt
 
 #### Description
 
-In this exercise, you will learn how to extend the default ICE widget by creating your own ICE templates.
+This is an extension of the CXP Content Widget that uses a custom content template.
 
 #### Steps
 
- - Create a new ICE widget by extending the default Backbase ICE widget, following [this documentation](https://my.backbase.com/resources/documentation/portal/5.6.0/icewidgets_customize.html)
- - Create a template named **media-object.html**, based on the [Twitter Bootstrap Media Object](http://getbootstrap.com/components/#media)
- - Add this template in the ICE widget from the previous step and update the **model.xml** to make this new template the default one
- - Upload your custom Content Widget to the Portal Catalog and test that it works as expected
-
-#### Additional resources
-
- - [Custom templates](../../templates/content/)
- - [Template styles](../../css/templates.css)
- - [server-catalog-widgets.xml](../../../../../config-info/import/server-catalog-widgets.xml#L53-L77)
+ - Create a custom content template and add it as a feature in the Enterprise Catalog. See [Custom Content Template](../pf2e2-feature-custom-content-template)
+ - Zip the content of this folder and drag and drop it in the **Portal** Catalog.
 
 #### References
 
- - [Create an ICE Widget](https://my.backbase.com/resources/documentation/portal/5.5.1.0/devd_tuto_ice_.html)
- - [Add a Content Template](https://my.backbase.com/resources/documentation/portal/5.5.1.0/devd_mang_icet_reftemp.html)
+ - [Create an ICE Widget](https://my.backbase.com/docs/product-documentation/documentation/portal/5.6.1/icewidgets_customize.html)
  - [Media Object](http://getbootstrap.com/components/#media)
  - [Twitter Bootstrap](http://getbootstrap.com/)
