@@ -4,24 +4,22 @@
 
 ### Exercise 1, part a
 
-_note: This exercise is 2 of 5 in a series of exercises that follow on from each other and should not be used independently_
+_note: This exercise is 1 of 5 in a series of exercises that follow on from each other and should not be used independently_
 _note: All exercises use the [standard portal set-up for backbase trainings](https://my.backbase.com/resources/how-to-guides/getting-your-first-launchpad-based-portal-set-up/)_
 
 #### Description
 
-In this exercise, you will learn how to retrieve data from Camel routes using JavaScript.
+In this exercise, you will learn how to use g:include to retrieve and transform content from a remote RSS feed, and display it in your widget.
 
 #### Steps
 
- - Install the service - **/services/feed/html**
+ - Install the [service](../../training-fe-module-02/feed-service-module/)
 
- - Do an ajax call to an RSS feed and use provided **Camel route** to transform the response to JSON
- - (DELETE) - Create and use an Angular template to render it
+#### Steps
 
-#### Additional resources
-
- - (REVIEW LINK) [Camel configuration](../../../../../../../../feed-service-module/src/main/resources/META-INF/spring/backbase-integration-service.xml#L10-L22)
-
+ - Create a new widget named **Feed Reader**, based on the Widget Development Methodology
+ - Let the widget include the content of an RSS feed using **g:include**
+ - Use provided **Camel route** to transform xml to html
 
 #### References
 
