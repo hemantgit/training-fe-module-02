@@ -10,19 +10,12 @@
     <artifactId>feed-service-module</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>Backbase CXP :: Integration Services :: Feed</name>
+    <name>Services :: Feed</name>
     <description>Feed Apache Camel services.</description>
 
     <dependencies>
 
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpcore</artifactId>
-            <version>4.2.5</version>
-        </dependency>
-
         <!-- Apache Camel -->
-
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-core</artifactId>
@@ -36,11 +29,6 @@
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-restlet</artifactId>
-            <version>2.12.4</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.camel</groupId>
-            <artifactId>camel-xmljson</artifactId>
             <version>2.12.4</version>
         </dependency>
 
