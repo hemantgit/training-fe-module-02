@@ -9,24 +9,12 @@ _note: All exercises use the [standard portal set-up for backbase trainings](htt
 
 #### Description
 
-In this exercise, you will learn how to:
- - Create custom Content Types
- - Generate Content Items
- - Extend the default Structured Widget by creating your own templates
- - Use custom templates to render Content Items
+This is an extension of the CXP Structured Content Widget that uses a custom structured content template.
 
 #### Steps
 
- - Follow this [how-to guide](https://my.backbase.com/resources/how-to-guides/give-your-custom-content-some-backbone-with-json-schema/
-) to learn how to create custom Content Types with JSON Schema
- - Follow this [how-to guide](https://my.backbase.com/resources/how-to-guides/bring-some-structure-to-your-content/
-) to learn how to create custom templates for the Structured Content Widget
-
-
-#### Additional resources
-
- - [Structured Content Resources](../../structured-content-materials)
- - [model.xml](./model.xml)
+ - Create a custom strucutred content template and add it as a feature in the Enterprise Catalog. See [Custom Structured Content Template](../pf2e3-feature-custom-structured-content-template)
+ - Zip the content of this folder and drag and drop it in the **Portal** Catalog.
 
 #### References
 
