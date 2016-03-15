@@ -11,16 +11,18 @@ _note: All exercises use the [standard portal set-up for backbase trainings](htt
 
 In this exercise, you will learn how to retrieve data from Camel routes using JavaScript.
 
+#### Prerequisites
+
+ - Install the [service](../../feed-service-module/)
+
 #### Steps
 
  - Do an ajax call to an RSS feed and use provided **Camel route** to transform the response to JSON
  - Create and use an Angular template to render it
 
-#### Additional resources
+#### Related resources
 
- - [Camel configuration](../../../../../../../../feed-service-module/src/main/resources/META-INF/spring/backbase-integration-service.xml#L10-L22)
- - [catalog-pf2e1b-feed-reader-widget.xml](catalog-pf2e1b-feed-reader-widget.xml)
- - [Angular Sanitize](../pf2e1b-anagular-sanitize-feature)
+  - [Angular Sanitize Feature](../pf2e1b-feature-angular-sanitize)
 
 #### References
 
