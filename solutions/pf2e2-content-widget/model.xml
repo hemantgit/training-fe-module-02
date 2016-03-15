@@ -1,0 +1,17 @@
+<catalog>
+    <widget>
+        <name>pf2e2-content-widget</name>
+        <extendedItemName>CXPContentWidget</extendedItemName>
+        <properties>
+            <property label="Title" name="title" viewHint="text-input,manager">
+                <value type="string">My Content Widget</value>
+            </property>
+            <property name="templateList" label="Templates">
+                <value type="string">Media Object,$(itemRoot)/templates/media-object.html</value>
+            </property>
+            <property name="templateUrl" label="Template" viewHint="select-one,manager">
+                <value type="string">$(itemRoot)/templates/media-object.html</value>
+            </property>
+        </properties>
+    </widget>
+</catalog>
