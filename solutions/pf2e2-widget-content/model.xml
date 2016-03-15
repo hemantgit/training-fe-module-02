@@ -7,11 +7,15 @@
                 <value type="string">My Content Widget</value>
             </property>
             <property name="templateList" label="Templates">
-                <value type="string">Media Object,$(itemRoot)/templates/media-object.html</value>
+                <value type="string">Media Object,$(contextRoot)/static/features/[BBHOST]/media-object-content-template/media-object-template/media-object.html</value>
             </property>
             <property name="templateUrl" label="Template" viewHint="select-one,manager">
-                <value type="string">$(itemRoot)/templates/media-object.html</value>
+                <value type="string">$(contextRoot)/static/features/[BBHOST]/media-object-content-template/media-object-template/media-object.html</value>
             </property>
         </properties>
+        <tags>
+            <tag type="section">FE Training Widgets</tag>
+            <tag type="regular">training</tag>
+        </tags>
     </widget>
 </catalog>

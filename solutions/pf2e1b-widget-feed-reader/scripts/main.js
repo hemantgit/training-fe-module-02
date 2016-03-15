@@ -12,7 +12,7 @@ define( function (require, exports, module) {
 
     'use strict';
 
-    module.name = 'pf2e1b-feed-reader-widget';
+    module.name = 'pf2e1b-widget-feed-reader';
 
     var base = require('base');
     var core = require('core');

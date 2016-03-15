@@ -1,0 +1,29 @@
+<catalog>
+    <widget>
+        <name>MyCXPStructuredContentWidget</name>
+        <contextItemName>[BBHOST]</contextItemName>
+        <extendedItemName>CXPStructuredContentWidget</extendedItemName>
+        <properties>
+            <property label="Title" name="title" viewHint="text-input,manager">
+                <value type="string">My Custom Structured Content Widget</value>
+            </property>
+            <property name="thumbnailUrl">
+                <value type="string">$(itemRoot)/icon.png</value>
+            </property>
+            <property name="templateList" label="Templates">
+                <value type="string">Plain text,$(contextRoot)/static/features/[BBHOST]/custom-structured-content-template/templates/plain.html,Backbase,$(contextRoot)/static/features/[BBHOST]/custom-structured-content-template/templates/backbase.html,Blog entry,$(contextRoot)/static/features/[BBHOST]/custom-structured-content-template/templates/blog-entry.html,Credit Card Banner,$(contextRoot)/static/features/[BBHOST]/custom-structured-content-template/templates/CreditCardBanner.html,Credit Card Full Description,$(contextRoot)/static/features/[BBHOST]/custom-structured-content-template/templates/CreditCardFullDescription.html</value>
+            </property>
+            <property name="templateUrl" label="Template" viewHint="select-one,manager">
+                <value type="string">$(contextRoot)/static/features/[BBHOST]/custom-structured-content-template/templates/plain.html</value>
+            </property>
+        </properties>
+        <tags>
+            <tag>backbase</tag>
+            <tag>cms</tag>
+            <tag>content</tag>
+            <tag>template</tag>
+            <tag>universal</tag>
+            <tag type="section">FE Training Widgets</tag>
+        </tags>
+    </widget>
+</catalog>

@@ -1,0 +1,9 @@
+<catalog>
+    <feature>
+        <name>custom-chrome-feature</name>
+        <properties>
+            <property name="title"><value type="string">Custom Chrome Feature</value></property>
+            <property name="thumbnailUrl"><value type="string">$(itemRoot)/icon.png</value></property>
+        </properties>
+    </feature>
+</catalog>

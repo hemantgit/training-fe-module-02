@@ -1,6 +1,6 @@
 <catalog>
     <widget>
-        <name>pf2e1b-feed-reader-widget</name>
+        <name>pf2e1a-widget-feed-reader</name>
         <contextItemName>[BBHOST]</contextItemName>
         <properties>
             <property name="src">
@@ -10,7 +10,7 @@
                 <value type="string">$(itemRoot)/icon.png</value>
             </property>
             <property label="Title" name="title">
-                <value type="string">pf2e1b-feed-reader-widget</value>
+                <value type="string">pf2e1a-widget-feed-reader</value>
             </property>
             <property name="TemplateName">
                 <value type="string">Standard_Widget</value>
@@ -22,6 +22,7 @@
             <property label="Feed URL" name="url" viewHint="manager,designModeOnly">
                 <value type="string">http://blog.backbase.com/feed</value>
             </property>
+
         </properties>
         <tags>
             <tag type="section">FE Training Widgets</tag>
