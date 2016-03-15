@@ -26,6 +26,7 @@ In this exercise, you will learn how to:
 #### Related resources
 
  - [Structured Content Resources](../../structured-content-materials)
+ - [Structured Content Widget](../ 	pf2e3-widget-structured-content)
 
 #### References
 
