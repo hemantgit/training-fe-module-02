@@ -6,19 +6,29 @@ In this module, we dive into more advanced widget concepts. We will first look a
 
 ### Contents
 
- - **pf2e1a**: How to consume from a Camel route and g:include the response in a widget ([solution]())
- - **pf2e1b**: How to consume from a Camel route through an ajax call ([solution](solutions/pf2e1b-feed-reader-widget))
- - **pf2e2**: How to create ICE templates ([solution](solutions/pf2e2-content-widget))
- - **pf2e3**: How to create widget chromes ([solution]())
- - **pf2e4**: Extending Structured Content ([solution](solutions/pf2e4-structured-content))
+ - **pf2e1a**: How to consume from a Camel route and g:include the response in a widget ([solution](cxp-fe-training-02/src/main/webapp/static/cxp-fe-training-02/widgets/pf2e1a-feed-reader-widget))
+ - **pf2e1b**: How to consume from a Camel route through an ajax call ([solution](cxp-fe-training-02/src/main/webapp/static/cxp-fe-training-02/widgets/pf2e1b-feed-reader-widget))
+ - **pf2e2**: How to create ICE templates ([solution](cxp-fe-training-02/src/main/webapp/static/cxp-fe-training-02/widgets/pf2e2-content))
+ - **pf2e3**: How to create widget chromes ([solution](cxp-fe-training-02/src/main/webapp/static/cxp-fe-training-02/html/chromes))
 
-### Apache Camel Service Installation
+### Installation & Configuration
 
-In order to perform the first two exercises of this module, you will need to install the provided [**feed-service-module**](./feed-service-module), an Apache Camel service allowing you to retrieve and transform XML data from a remote RSS feed:
+ - Copy and paste the **cxp-fe-training-02** folder in the **statics/bundles** folder of your Launchpad 0.12.x project
+
+ - Add the bundle resource base in **portal/pom.xml**, e.g.:
+
+   ```xml
+   <resourceBases>
+       <resourceBase>${statics.dir}/bundles/cxp-fe-training-02/src/main/webapp</resourceBase> // add this line
+       <resourceBase>${project.basedir}/src/main/webapp</resourceBase>
+       <resourceBase>${work.dir}</resourceBase>
+   </resourceBases>
+   ```
 
  - If there is no folder called **services** at the root of your project, create it and paste the **feed-service-module** folder in there
- - Run `mvn clean install` in the **services/feed-service-module** folder
- - In **webapps/portal/pom.xml**, add the following dependency (**hint**: search for the line that says _"Include here all Apache Camel services from services module that need to be deployed in final WAR"_):
+
+ - run `mvn clean install` in the **services/feed-service-module** folder
+ - in **portal/pom.xml**, add the following dependency:
 
    ```xml
    <dependency>
@@ -28,4 +38,4 @@ In order to perform the first two exercises of this module, you will need to ins
    </dependency>
    ```
 
- - Restart the Portal module
+Then restart portal.

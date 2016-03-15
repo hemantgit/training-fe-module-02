@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:g="http://www.backbase.com/2008/gadget" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/xml; charset=UTF-8" />
+    <link rel="stylesheet" href="styles/base.css" type="text/css" />
+
+    <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+
+    <g:preferences>
+        <g:preference name="url" label="Feed URL" viewHint="user,designModeOnly" type="text" default="http://blog.backbase.com/feed" />
+    </g:preferences>
+
+</head>
+
+<body g:onload="requireWidget(__WIDGET__, 'scripts/main')" ng-controller="MainCtrl as mainCtrl" class="lp-bt-pf2e1b-feed-reader-widget">
+
+    <lp-template src="templates/pf2e1b-feed-reader-widget-tpl.ng.html"></lp-template>
+
+</body>
+</html>
