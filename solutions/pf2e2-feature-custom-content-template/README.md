@@ -23,9 +23,9 @@ In this exercise, you will learn how to extend the default ICE widget by creatin
 
   - by editing the templateList property value of the content widget item in the **Portal** Catalog. In order to do this, you have to acces the **Portal** Catalog, activate the content widget if it hasn't been activated previously, click on the `Settings` icon of the widget, switch to the `Properties` tab, and finally add the following string at the end of the `templateList` property value:
  
-   ``` 
-   ,Media Object,$(contextRoot)/static/features/[BBHOST]/media-object-content-template/media-object-template/media-object.html**
-   ```
+     ``` 
+     ,Media Object,$(contextRoot)/static/features/[BBHOST]/media-object-content-template/media-object-template/media-object.html**
+     ```
 
 #### References
 
