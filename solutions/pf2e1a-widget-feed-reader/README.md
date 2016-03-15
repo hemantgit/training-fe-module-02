@@ -11,7 +11,7 @@ _note: All exercises use the [standard portal set-up for backbase trainings](htt
 
 In this exercise, you will learn how to use g:include to retrieve and transform content from a remote RSS feed, and display it in your widget.
 
-#### Steps
+#### Prerequisites
 
  - Install the [service](../../feed-service-module/)
 
