@@ -1,6 +1,10 @@
 # Backbase Training Exercises
 
-## Installation
+## Portal Frontend - Module 2: Widget Extras
+
+An Apache Camel service allowing you to retrieve and transform XML data from a remote RSS feed.
+
+### Installation
 
  - If there is no folder called **services** at the root of your project, create it and paste the **feed-service-module** folder in there
  - Run `mvn clean install` in the **services/feed-service-module** folder
