@@ -13,10 +13,11 @@ In this exercise, you will learn how to create you own custom chrome for Backbas
 
 #### Steps
 
- - Use Twitter Bootstrap Panels, with heading, footer, content
- - In the Heading, you must display the widget title
- - In the content, the widget itself
- - In the footer, the current limit of todos for the widget (if there is a limit)
+ - Create a custom chrome:
+  - Use Twitter Bootstrap Panels, with heading, footer, content
+  - In the Heading, you must display the widget title
+  - In the content, the widget itself
+  - In the footer, the current limit of todos for the widget (if there is a limit)
  - Add this feature in the Enterprise Catalog.
  - Open `webapps/portalserver/src/main/resources/conf/uiEditingOptions.js` and add this line in widget chrome list: `
  {label: "Custom Chrome", value: "$(contextRoot)/static/features/[BBHOST]/custom-chrome-feature/custom-chrome/custom-chrome.html"}`
