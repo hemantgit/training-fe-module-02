@@ -9,34 +9,25 @@ _note: All exercises use the [standard portal set-up for backbase trainings](htt
 
 #### Description
 
-In this exercise, you will learn how to extend the default ICE widget by creating your own ICE templates.
+In this exercise, you will learn how to create you own custom chrome for Backbase widgets.
 
 #### Steps
 
- - Create a new ICE widget by extending the default Backbase ICE widget, following [this documentation](https://my.backbase.com/resources/documentation/portal/5.6.0/icewidgets_customize.html)
- - Create a template named **media-object.html**, based on the [Twitter Bootstrap Media Object](http://getbootstrap.com/components/#media)
- - Add this template in the ICE widget from the previous step and update the **model.xml** to make this new template the default one
- - Upload your custom Content Widget to the Portal Catalog and test that it works as expected
-
-#### Additional resources
-
- - [Custom templates](../../templates/content/)
- - [Template styles](../../css/templates.css)
- - [server-catalog-widgets.xml](../../../../../config-info/import/server-catalog-widgets.xml#L53-L77)
+ - Use Twitter Bootstrap Panels, with heading, footer, content
+ - In the Heading, you must display the widget title
+ - In the content, the widget itself
+ - In the footer, the current limit of todos for the widget (if there is a limit)
+ - Add this feature in the Enterprise Catalog.
+ - Open `webapps/portalserver/src/main/resources/conf/uiEditingOptions.js` and add this line in widget chrome list
+ ```
+ {label: "Custom Chrome", value: "$(contextRoot)/static/features/[BBHOST]/custom-chrome-feature/custom-chrome/custom-chrome.html"}
+ ```
+ - Restart portal server
+ - Test your new chrome with the notification widget you built
 
 #### References
 
- - [Create an ICE Widget](https://my.backbase.com/resources/documentation/portal/5.5.1.0/devd_tuto_ice_.html)
- - [Add a Content Template](https://my.backbase.com/resources/documentation/portal/5.5.1.0/devd_mang_icet_reftemp.html)
- - [Media Object](http://getbootstrap.com/components/#media)
- - [Twitter Bootstrap](http://getbootstrap.com/)
- 
- 
- 
- 
- webapps/portalserver/src/main/resources/conf/uiEditingOptions.js
- 
- Add this  line in widget chrome list
- {label: "Custom Chrome", value: "$(contextRoot)/static/features/[BBHOST]/custom-chrome-feature/custom-chrome/custom-chrome.html"}
+ - [Widget Chrome Development](https://my.backbase.com/docs/product-documentation/documentation/portal/5.6.1/widgets_chrome.html)
+ - [Twitter Bootstrap Panels](http://getbootstrap.com/components/#panels)
  
  
