@@ -13,7 +13,7 @@ In this exercise, you will learn how to use g:include to retrieve and transform 
 
 #### Steps
 
- - Install the [service](../../training-fe-module-02/feed-service-module/)
+ - Install the [service](../../feed-service-module/)
 
 #### Steps
 
