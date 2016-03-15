@@ -9,17 +9,10 @@ _note: All exercises use the [standard portal set-up for backbase trainings](htt
 
 #### Description
 
-In this exercise, you will learn how to retrieve data from Camel routes using JavaScript.
+A feature that makes the Angular Sanitize library available to widgets.
 
-#### Steps
+#### Related resources
 
- - Do an ajax call to an RSS feed and use provided **Camel route** to transform the response to JSON
- - Create and use an Angular template to render it
-
-#### Additional resources
-
- - [Camel configuration](../../../../../../../../feed-service-module/src/main/resources/META-INF/spring/backbase-integration-service.xml#L10-L22)
- - [catalog-pf2e1b-feed-reader-widget.xml](catalog-pf2e1b-feed-reader-widget.xml)
  - [Feed Reader Widget](../pf2e1b-feed-reader-widget)
 
 #### References
