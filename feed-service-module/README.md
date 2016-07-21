@@ -25,6 +25,8 @@ An Apache Camel service allowing you to retrieve and transform XML data from a r
 ### Test
  
 Make sure the service is successfully installed by visiting the following URLs:
+
 - http://localhost:7777/portalserver/services/feed/html?url=http://blog.backbase.com/feed
 - http://localhost:7777/portalserver/services/rest/feed/json?url=http://blog.backbase.com/feed
+
 The value of the **url** parameter can be changed to any RSS feed URL.
