@@ -5,20 +5,42 @@
              xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
                            http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
 
-    <routeContext id="com.backbase.portal.integration.service.feed.exchangeservices" >
+    <routeContext id="com.backbase.portal.integration.service.feed.exchangeservices">
+
+        <!-- For users behind a firewall:
+
+                                               This exercise uses the recipient list to make a request.
+                                               Since the URL contains the HTTP protocol reference, it will use the Camel Http component.
+                                               If you are behind a firewall, you'll need to supplement the address with proxy configuration.
+
+                                               See some examples:
+
+                                               Without user and password:  <simple>${header.url}??proxyHost=localhost&amp;proxyPort=8888</simple>
+                                               Providing user information: <simple>${header.url}??proxyHost=localhost&amp;proxyPort=8888&amp;proxyUserName=johndoe&amp;proxyUserPassword=johndoe123</simple>
+
+                                               Find also the set of proxy-related parameters.
+
+                                               proxyHost: The proxy host name
+                                               proxyPort: The proxy port number
+                                               proxyAuthMethod: Authentication method for proxy, either as Basic, Digest or NTLM.
+                                               proxyUserName: Username for proxy config
+                                               proxyUserPassword: Password for proxy config
+                                               proxyAuthDomain: Domain for proxy NTML authentication
+                                               proxyAuthHost: Optional host for proxy NTML authentication
+                                            -->
 
         <route id="com.backbase.portal.integration.service.feed.exchangeservices.json">
             <from uri="restlet:/feed/json?restletMethods=GET&amp;restletBinding=#queryStringToHeadersRestletBinding"/>
             <log message="Headers before cleanup: ${headers}" loggingLevel="DEBUG"/>
             <!--<removeHeaders pattern="CamelHttp*" excludePattern="CamelHttpMethod"/>-->
             <!--<removeHeaders pattern="If-*"/>-->
-            <removeHeaders pattern="*" excludePattern="url" />
+            <removeHeaders pattern="*" excludePattern="url"/>
             <log message="Headers after cleanup: ${headers}" loggingLevel="DEBUG"/>
             <recipientList>
                 <simple>${header.url}</simple>
             </recipientList>
             <removeHeaders pattern="Last-Modified"/>
-            <marshal ref="xmljson" />
+            <marshal ref="xmljson"/>
         </route>
 
         <route id="com.backbase.portal.integration.service.feed.exchangeservices.html">
@@ -26,7 +48,7 @@
             <log message="Headers before cleanup: ${headers}" loggingLevel="DEBUG"/>
             <!--<removeHeaders pattern="CamelHttp*" excludePattern="CamelHttpMethod"/>-->
             <!--<removeHeaders pattern="If-*"/>-->
-            <removeHeaders pattern="*" excludePattern="url" />
+            <removeHeaders pattern="*" excludePattern="url"/>
             <log message="Headers after cleanup: ${headers}" loggingLevel="DEBUG"/>
             <recipientList>
                 <simple>${header.url}</simple>
