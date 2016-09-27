@@ -38,8 +38,8 @@ This exercise uses the recipient list to make a request.
 Since the URL contains the HTTP protocol reference, it will use the Camel Http component. If you are behind a firewall, you'll need to supplement the address with proxy configuration.
   
 See some examples: 
-- Without user and password:  <simple>${header.url}??proxyHost=localhost&amp;proxyPort=8888</simple>
-- Providing user information: <simple>${header.url}??proxyHost=localhost&amp;proxyPort=8888&amp;proxyUserName=johndoe&amp;proxyUserPassword=johndoe123</simple>
+- Without user and password:  <simple>${header.url}?proxyHost=localhost&amp;proxyPort=8888</simple>
+- Providing user information: <simple>${header.url}?proxyHost=localhost&amp;proxyPort=8888&amp;proxyUserName=johndoe&amp;proxyUserPassword=johndoe123</simple>
  
 Find also the set of proxy-related parameters.
  
