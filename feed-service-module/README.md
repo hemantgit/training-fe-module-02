@@ -30,3 +30,23 @@ Make sure the service is successfully installed by visiting the following URLs:
 - [http://localhost:7777/portalserver/services/rest/feed/json?url=http://blog.backbase.com/feed](http://localhost:7777/portalserver/services/rest/feed/json?url=http://blog.backbase.com/feed)
 
 The value of the **url** parameter can be changed to any RSS feed URL.
+
+### Optional: Proxy Configuration
+
+This exercise uses the recipient list to make a request.
+ 
+Since the URL contains the HTTP protocol reference, it will use the Camel Http component. If you are behind a firewall, you'll need to supplement the address with proxy configuration.
+  
+See some examples: 
+- Without user and password:  <simple>${header.url}?proxyHost=localhost&amp;proxyPort=8888</simple>
+- Providing user information: <simple>${header.url}?proxyHost=localhost&amp;proxyPort=8888&amp;proxyUserName=johndoe&amp;proxyUserPassword=johndoe123</simple>
+ 
+Find also the set of proxy-related parameters.
+ 
+- proxyHost: The proxy host name
+- proxyPort: The proxy port number
+- proxyAuthMethod: Authentication method for proxy, either as Basic, Digest or NTLM.
+- proxyUserName: Username for proxy config
+- proxyUserPassword: Password for proxy config
+- proxyAuthDomain: Domain for proxy NTML authentication
+- proxyAuthHost: Optional host for proxy NTML authentication
