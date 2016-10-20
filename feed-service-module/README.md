@@ -39,14 +39,14 @@ Since the URL contains the HTTP protocol reference, it will use the Camel Http c
   
 See some examples: 
 - Without user and password:  <simple>${header.url}?proxyHost=localhost&amp;proxyPort=8888</simple>
-- Providing user information: <simple>${header.url}?proxyHost=localhost&amp;proxyPort=8888&amp;proxyUserName=johndoe&amp;proxyUserPassword=johndoe123</simple>
+- Providing user information: <simple>${header.url}?proxyAuthMethod=Basic&amp;proxyHost=localhost&amp;proxyPort=8888&amp;proxyAuthUsername=johndoe&amp;proxyAuthPassword=johndoe123</simple>
  
-Find also the set of proxy-related parameters.
+Find also the set of proxy-related parameters:
  
 - proxyHost: The proxy host name
 - proxyPort: The proxy port number
 - proxyAuthMethod: Authentication method for proxy, either as Basic, Digest or NTLM.
-- proxyUserName: Username for proxy config
-- proxyUserPassword: Password for proxy config
+- proxyAuthUsername: Username for proxy config
+- proxyAuthPassword: Password for proxy config
 - proxyAuthDomain: Domain for proxy NTML authentication
 - proxyAuthHost: Optional host for proxy NTML authentication
