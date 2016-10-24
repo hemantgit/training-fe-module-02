@@ -35,7 +35,7 @@ The value of the **url** parameter can be changed to any RSS feed URL.
 
 This exercise uses the recipient list to make a request.
  
-Since the URL contains the HTTP protocol reference, it will use the Camel Http component. If you are behind a firewall, you'll need to supplement the address with proxy configuration.
+Since the URL contains the HTTP protocol reference, it will use the [Camel Http](http://camel.apache.org/http.html) component. If you are behind a firewall, you'll need to supplement the address with proxy configuration.
   
 See some examples: 
 - Without user and password:  <simple>${header.url}?proxyHost=localhost&amp;proxyPort=8888</simple>
