@@ -1,15 +1,13 @@
-<!-- Add NG Template here-->
-
-<div>
+<div ng-controller="MainCtrl as mainCtrl">
     <!-- loading message -->
-    <div ng-if="!mainCtrl.feedData">Feed not loaded yet!</div>
+    <div ng-if="!mainCtrl.feedChannelData">Feed not loaded yet!</div>
     <!-- feed renderer -->
-    <div ng-if="mainCtrl.feedData.channel">
-        <pre class="hidden">{{mainCtrl.feedData.channel.item}}</pre>
-        <h3>{{mainCtrl.feedData.channel.title}}</h3>
-        <p>{{mainCtrl.feedData.channel.description}}</p>
+    <div ng-if="mainCtrl.feedChannelData">
+        <pre class="hidden">{{mainCtrl.feedChannelData.item}}</pre>
+        <h3>{{mainCtrl.feedChannelData.title}}</h3>
+        <p>{{mainCtrl.feedChannelData.description}}</p>
 
-        <div ng-repeat="article in mainCtrl.feedData.channel.item track by $index">
+        <div ng-repeat="article in mainCtrl.feedChannelData.item track by $index">
             <h4>{{ article.title }}</h4>
             <!-- use "ng-bind-html" directive to render raw html content -->
             <p ng-bind-html="article.description"></p>

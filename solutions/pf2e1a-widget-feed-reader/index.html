@@ -9,7 +9,7 @@
 <body g:onload="requireWidget(__WIDGET__, 'scripts/main')" ng-controller="MainCtrl as mainCtrl" class="lp-bt-pf2e1b-feed-reader-widget">
 
     <g:include src="$(contextRoot)/services/feed/html">
-        <g:http-param name="url" value="${url}" />
+        <g:http-param name="url" value="${rssFeedURL}" />
     </g:include>
 
 </body>

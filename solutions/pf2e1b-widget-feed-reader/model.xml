@@ -19,8 +19,11 @@
                 <value type="string">$(contextRoot)/static/features/[BBHOST]/chromes/blank/chrome-blank.html</value>
             </property>
             <!--Custom Properties-->
-            <property label="Feed URL" name="url" viewHint="manager,designModeOnly">
+            <property label="RSS Feed URL" name="rssFeedURL" viewHint="manager,designModeOnly">
                 <value type="string">http://blog.backbase.com/feed</value>
+            </property>
+              <property label="Feed Endpoint" name="feedEndpoint" viewHint="manager,designModeOnly">
+                <value type="string">$(servicesPath)/services/rest/feed/json</value>
             </property>
         </properties>
         <tags>

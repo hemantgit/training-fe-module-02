@@ -2,33 +2,40 @@
  *  ----------------------------------------------------------------
  *  Copyright © Backbase B.V.
  *  ----------------------------------------------------------------
- *  Author : Backbase R&D - Amsterdam - New York
  *  Filename : main.js
- *  Description: ${widget.description}
+ *  Description: pf2e1a-widget-feed-reader
  *  ----------------------------------------------------------------
  */
-
 define( function (require, exports, module) {
 
     'use strict';
 
     module.name = 'pf2e1a-widget-feed-reader';
 
+     // External Dependencies
     var base = require('base');
     var core = require('core');
     var ui = require('ui');
+
+    // Internal Dependencies 
+    var Models = require('./model');   
+    var MainCtrl = require('./controllers/main-ctrl');
 
     var deps = [
         core.name,
         ui.name
     ];
 
-    // @ngInject
+    /**
+     * @ngInject
+     */
     function run() {
         // Module is Bootstrapped
     }
 
     module.exports = base.createModule(module.name, deps)
-        .controller( require('./controllers') )
+        .constant('WIDGET_NAME', module.name )
+        .controller('MainCtrl', MainCtrl )
+        .service( 'FeedService', Models )
         .run( run );
 });
