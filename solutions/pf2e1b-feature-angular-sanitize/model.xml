@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalog totalSize="1">
+<catalog>
     <feature>
         <name>angular-sanitize</name>
         <tags/>
