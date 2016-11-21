@@ -10,7 +10,7 @@ An Apache Camel service allowing you to retrieve and transform XML data from a r
 
  - Run `mvn clean install` in the **services/feed-service-module** folder.
 
- - In **webapps/portalserver/pom.xml**, add the following dependency (**hint**: search for the line that says _"We include here the Sample Services Bill Of Materials, only one dependency for all services."_):
+ - In **webapps/portalserver/pom.xml**, add the following dependency (**hint**: search for the _<dependencies>_ tag that is a direct decendant of the root _<project>_ tag):
 
   ```xml
   <dependency>
