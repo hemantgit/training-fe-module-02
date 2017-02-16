@@ -18,14 +18,16 @@ In this exercise, you will learn how to extend the default ICE widget by creatin
  - Upload your custom content template to the Enterprise Catalog
 
  - Once the template is added to the Enterprise Catalog, it can be consumed by a Content Widget in one of the following two ways:
-
-  - by using the provided [content widget extension](../pf2e2-widget-content), or 
-
+ 
+ 
   - by editing the `templateList` property value of the content widget item in the **Portal** Catalog. In order to do this, you have to acces the **Portal** Catalog, activate the content widget if it hasn't been activated previously, click on the `Settings` icon of the widget, switch to the `Properties` tab, and finally add the following string at the end of the `templateList` property value:
  
      ``` 
      ,Media Object,$(contextRoot)/static/features/[BBHOST]/media-object-content-template/media-object-template/media-object.html
      ```
+
+  - alternatively, the same can be achieved by using the provided [content widget extension](../pf2e2-widget-content)
+
 
 #### References
 
